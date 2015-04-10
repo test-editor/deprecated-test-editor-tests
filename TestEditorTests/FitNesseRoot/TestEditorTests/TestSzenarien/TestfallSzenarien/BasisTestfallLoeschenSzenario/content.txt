@@ -1,0 +1,7 @@
+!|scenario |BasisTestfallLoeschenSzenario _||
+|note|Description: Das Szenario löscht den Basis-Testfall "MyBasisTest". Über den Test-Explorer wird das Menü zum Löschen des Testfalls geöffnet und die anschließende Sicherheitsabfrage bestätigt.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,DemoTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.deleteElement|aus|
+|note| Maske: Dialog: Löschen|
+|klicke auf|dialog.delete.okButton|

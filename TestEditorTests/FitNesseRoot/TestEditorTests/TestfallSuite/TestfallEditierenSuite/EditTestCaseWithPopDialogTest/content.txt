@@ -1,0 +1,29 @@
+Tests the edit of testcase with the popupdialog. After edit step, it will close the testcase and checks the reopening of the testcase. This Testcase is build on TE-23.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Testfall
+-!|script|
+|sende Tastaturkommando|view.editTestcase.pupup.edit|an die Testfallansicht|
+# Maske: Allgemein
+-!|script|
+|warte|1|Sekunden|
+# Maske: View: Testfall
+-!|script|
+|sende Tastaturkommando|view.editTestcase.pupup.esc|an das Beschreibungsfeld|
+# Maske: Allgemein
+-!|script|
+|schließe den Reiter|LoginValidTest|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

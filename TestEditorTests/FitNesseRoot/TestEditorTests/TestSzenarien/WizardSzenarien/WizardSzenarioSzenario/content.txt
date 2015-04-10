@@ -1,0 +1,9 @@
+!|scenario |WizardSzenarioSzenario _|Pfad, Name|
+|note|Description: Oh ein comment|
+|note|Description: Das Szenario erwartet als Parameter einen gültigen Pfad (z.B. darüberliegende Szenario-Suite) und einen gültigen Szenario-Namen. Es wird der Wizard zum Erzeugen des Szenarios geöffnet und das Szenario angelegt.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{Pfad}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestscenario|aus|
+|note| Maske: Wizard: Neues Szenario|
+|gebe in das Feld|wizard.newTestscenario.nameText|den Wert|@{Name}|ein|
+|klicke auf|wizard.newTestscenario.finishButton|

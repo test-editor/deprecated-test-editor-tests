@@ -1,0 +1,23 @@
+Dieser Testfall erzeugt eine neuen Testfall im "DemoWebTests" Projekt. Der Testfall wird geöffnet und anschließend wieder gelöscht.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|DemoWebTests,LocalDemoSuite|MeinTest|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,MeinTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.LoeschenSzenario
+!|Loeschen Szenario|
+|Pfad|
+|DemoWebTests,LocalDemoSuite,MeinTest|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

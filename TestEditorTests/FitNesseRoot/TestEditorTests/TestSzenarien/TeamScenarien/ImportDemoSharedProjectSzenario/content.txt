@@ -1,0 +1,9 @@
+!|scenario |ImportDemoSharedProjectSzenario _||
+|note| Maske: Allgemein|
+|$wsPath=|getWorkspacePath|
+|note| Maske: View: Test-Explorer|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.importProject|aus|
+|note| Maske: Wizard: Projekt importieren|
+|gebe in das Feld|wizard.shareProject.projectname|den Wert|SharedProject|ein|
+|gebe in das Feld|wizard.shareProject.urlText|den Wert|file://$wsPath/.repo/testrepo|ein|
+|klicke auf|wizard.shareProject.finishButton|

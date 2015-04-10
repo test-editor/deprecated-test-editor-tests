@@ -1,0 +1,16 @@
+Dieser Testfall ruft den Wizard zum Erstellen eines Projektes auf und überprüft unterschiedliche Kombinationen von Fehleingaben (z.B. ungültiger Name, Port) auf deren Fehlermeldung.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!!!!!!! Hinweis !!!!!!! - Es wäre sinnvoll diese Tabelle um weitere Kominationen (z.B. auch Port ungültig: abc, 1, ... und Name ungültig: Eingroßbuchstabe, Ein&Sonderzeichen, ...) zu erweitern!
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardProjektFehleingabeSzenario
+!|WizardProjektFehleingabeSzenario|
+|Name|Fehlermeldung|
+|DemoWebTests|Name ist bereits vorhanden!|
+|kleinesProjekt|Der Name entspricht nicht dem vorgegebenen Muster|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

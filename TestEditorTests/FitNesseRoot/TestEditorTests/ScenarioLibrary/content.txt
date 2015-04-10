@@ -1,0 +1,191 @@
+|import|
+|org.testeditor.fixture.swt|
+
+!|Library|
+|SwtBotFixture|
+
+-!|script|
+|setElementlist|${ELEMENT_LISTE}|
+
+!1 SWTBot Methoden
+
+'''Wert eingeben''' --------
+!|scenario|gebe in das Feld|guiid|den Wert|text|ein|
+|setTextById;|@guiid|@text|
+
+'''Wert auswählen''' --------
+!|scenario|wähle in Feld|guiid|den Wert|text|aus|
+|selectComboBoxWithId;|@guiid|@text|
+
+'''Button betätigen''' --------
+!|scenario|klicke auf|guiElement|
+|clickButton|@guiElement|
+
+'''Checkbox klicken''' --------
+!|scenario|klicke Checkbox|guiElement|
+|clickCheckBox|@guiElement|
+
+'''Checkbox klicken''' --------
+!|scenario|klicke Checkbox per Label|guiElement|
+|clickCheckBox|@guiElement|
+
+'''Checkbox aktiviert''' --------
+!|scenario|prüfe ob die Checkbox|guiElement|aktiviert ist|
+|isCheckBoxEnabled;|@guiElement|
+
+'''Checkbox deaktiviert''' --------
+!|scenario|prüfe ob die Checkbox|guiElement|deaktiviert ist|
+|isCheckBoxDisabled;|@guiElement|
+
+'''Checkbox selektiert--------
+!|scenario|prüfe ob die Checkbox|guiElement|selektiert ist|
+|isCheckBoxChecked;|@guiElement|
+
+'''Checkbox deselektiert''' --------
+!|scenario|prüfe ob die Checkbox|guiElement|deselektiert ist|
+|isCheckBoxNotChecked;|@guiElement|
+
+'''Kontextmenüeintrag auswählen''' --------
+!|scenario|wähle aus dem Kontextmenü den Eintrag _ aus|menueeintrag|
+|clickContextMenu|@menueeintrag|
+
+'''Menüeintrag auswählen''' --------
+!|scenario|wähle den Menüeintrag _ aus|menueeintrag|
+|clickMenuByName|@menueeintrag|
+
+'''Menüeintrag auswählen''' --------
+!|scenario|wähle den Menüeintrag mit Id _ aus|idofmenue|
+|clickMenuById|@idofmenue|
+
+'''Element aufklappen''' --------
+!|scenario|navigiere zum Element|elementname|
+|expandTreeItems|@elementname|
+
+'''Element von bekanntem Tree aufklappen''' --------
+!|scenario|navigiere im Auswahlbaum|locator|zum Element|elementname|
+|expandTreeItemsWithId;|@locator|@elementname|
+
+'''Zeile markieren''' --------
+!|scenario|markiere Zeile|number|im Text|guiid|
+|selectLineInText|@guiid|@number|
+
+'''Zeile mit Text markieren''' --------
+!|scenario|markiere in dem Text|guiid|die Zeile|pattern|an Position|number|
+|setCursorInTextWithContentsAtPosition;|@guiid|@pattern|@number|
+
+'''!-Test Editor-! starten''' --------
+!|scenario|starte !-Test Editor-!|path|
+|startApplication|@path|
+
+'''!-Test Editor-! beenden''' --------
+!|scenario|beende !-Test Editor-!|
+|stopApplication|
+
+'''Sekunden warten''' --------
+!|scenario|warte|anzahlSekunden|Sekunden|
+|waitSeconds|@anzahlSekunden|
+
+'''Text prüfen''' --------
+!|scenario|prüfe ob im Feld|guiid|der Text|pattern|vorhanden ist|
+|checkTextExistInWidgets;|@guiid|@pattern|
+
+'''Text ungültig prüfen''' --------
+!|scenario|prüfe ob im Textblock|guiid|der Text|pattern|nicht vorhanden ist|
+|compareTextNotInStyledById;|@guiid|@pattern|
+
+'''Text prüfen''' --------
+!|scenario|prüfe ob im Textblock|guiid|der Text|pattern|vorhanden ist|
+|compareTextInStyledById;|@guiid|@pattern|
+
+'''Text in Zeile ungültig prüfen''' --------
+!|scenario|prüfe ob in Test|pathToTest|der Text|pattern|in Zeile|line|nicht vorhanden ist|
+|checkNotTextInCodeLine;|@pathToTest|@pattern|@line|
+
+'''Text in Zeile prüfen''' --------
+!|scenario|prüfe ob in Test|pathToTest|der Text|pattern|in Zeile|line|vorhanden ist|
+|checkTextInCodeLine;|@pathToTest|@pattern|@line|
+
+'''Text in Widget prüfen''' --------
+!|scenario|überprüfe ob der Text|text|vorhanden ist|
+|checkTextForAllWidgets|@text|
+
+
+'''Widgets analysieren''' --------
+!|scenario|Alle Widgets suchen und protokollieren|
+|analyzeWidgets|
+
+'''Button aktiviert''' --------
+!|scenario|prüfe ob der Button|guiElement|aktiviert ist|
+|isButtonEnabled|@guiElement|
+
+'''Button deaktiviert''' --------
+!|scenario|prüfe ob der Button|guiElement|deaktiviert ist|
+|isButtonDisabled;|@guiElement|
+
+
+'''Klicke Toolbar-Button mit Tooltip''' --------
+!|scenario|drücke den Toolbar-Button|tooltip|
+|clickToolbarButtonWithTooltip;|@tooltip|
+
+'''Vergleiche Text in Feld''' --------
+!|scenario|überprüfe ob im Feld|guiid|der Text|pattern|vorhanden ist|
+|compareTextById;|@guiid|@pattern|
+
+'''Vergleiche Text in Beschreibung''' --------
+!|scenario|überprüfe ob die Beschriftung|guiid|dem Text|pattern|entspricht|
+|compareLabelById;|@guiid|@pattern|
+
+'''Schließe den Reiter''' --------
+!|scenario|schließe den Reiter|pattern|
+|closeTabItemWithName;|@pattern|
+
+'''Sende das Tastaturkommando an Ansicht des Testfalls''' --------
+!|scenario|sende Tastaturkommando|guiid|an die Testfallansicht|
+|pressShortcutOfStyledText;|Testfall|@guiid|
+
+!|scenario|sende Tastaturkommando|guiid|an das Beschreibungsfeld|
+|pressShortcutOfStyledText;|view.description.descriptionText|@guiid|
+
+'''Sende das kombinierte Tastaturkommando an Ansicht des Testfalls'''  --------
+!|scenario|sende kombiniertes Tastaturkommando|guimodifier|und|guiid|an die Testfallansicht|
+|pressShortcutWithModificationKeyOfStyledText;|Testfall|@guimodifier|@guiid|
+
+'''Alle Projekte lesen'''  --------
+!|scenario|alle Projekte lesen|
+|readAllProjectsInTree|
+
+'''Alle Projekte löschen'''  --------
+!|scenario|alle Projekte löschen|
+|deleteAllProjects|
+
+'''Zahl der Projekte gegen angenommenden Wert testen'''  --------
+!|scenario|prüfe ob die Anzahl der Projekte _ entspricht|expectedCount|
+|countProjectsEquals|@expectedCount|
+
+'''Zahl der Kinder gegen angenommenden Wert testen'''  --------
+!|scenario|prüfe ob das Element|nodes|genau|expectedCount|Kinder hat|
+|countChildrenEquals;|@nodes|@expectedCount|
+
+'''Zahl der Kinder eines bekannten Trees gegen angenommenden Wert testen'''  --------
+!|scenario|prüfe ob im Auswahlbaum|locator|das Element|nodes|genau|expectedCount|Kinder hat|
+|countChildrenEqualsWithId;|@locator|@nodes|@expectedCount|
+
+'''Prüfe ob der Server für das Projekt läuft ''' --------
+!|scenario|prüfe ob der Server auf dem Port|port|für das Projekt|projectName|läuft|
+|isFitNesseProjectServerRunning;|@port|@projectName|
+
+
+'''Selektiere Element in Tabelle ''' --------
+!|scenario|selektiere Index|index|
+|selectTableAtIndex|@index||
+
+
+'''Einen Wert zu einem Schlüssel in einer Property Datei prüfen ''' --------
+!|scenario|ist der Wert|wert|am Schlüssel |key| hinterlegt in der datei | datei |
+|checkInProprtyValue;|@datei|@key|@wert|
+
+
+'''Warte auf Button und betätige ihn ''' --------
+!|scenario|Button|locator|betätigen wenn dieser aktiv ist |
+|waitForButtonAndClick;|@locator|
+

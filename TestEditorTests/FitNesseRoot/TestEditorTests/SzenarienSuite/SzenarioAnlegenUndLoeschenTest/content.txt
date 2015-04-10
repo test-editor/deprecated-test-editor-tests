@@ -1,0 +1,23 @@
+Dieser Testfall erzeugt eine neues Szenario im "DemoWebTests" Projekt. Das Szenario wird geöffnet und anschließend wieder gelöscht.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardSzenarioSzenario
+!|Wizard Szenario Szenario|
+|Pfad|Name|
+|DemoWebTests,TestSzenarien|MeinSzenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,TestSzenarien,MeinSzenario|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.LoeschenSzenario
+!|Loeschen Szenario|
+|Pfad|
+|DemoWebTests,TestSzenarien,MeinSzenario|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

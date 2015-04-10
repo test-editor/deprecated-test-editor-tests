@@ -1,0 +1,8 @@
+!|scenario |UmbenennenSzenario _|Pfad, NeuerName|
+|note|Description: Das Szenario erwartet einen gültigen Pfad zu einem Element (z.B. Testfall, Suite, ...) sowie einen gültigen neuen Namen für das Element. Es wird über den Test-Explorer das Element umbenannt.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@Pfad|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.rename|aus|
+|note| Maske: Wizard: Umbenennen|
+|gebe in das Feld|wizard.rename.nameText|den Wert|@NeuerName|ein|
+|klicke auf|wizard.rename.finishButton|

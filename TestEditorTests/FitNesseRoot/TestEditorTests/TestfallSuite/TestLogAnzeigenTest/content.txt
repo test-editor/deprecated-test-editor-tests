@@ -1,0 +1,29 @@
+Dieser Test prüft, dass das test Log für einen bestehenden Testfall angezeigt wird. Dafür ist im Demo projekt ein TestLog für den Testfall SucheSignalIdunaTest hinterlegt, da sonst die Aktion im Kontextmenü nicht aktiv ist.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,SucheSignalIdunaTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.showTestLog|aus|
+# Maske: Allgemein
+-!|script|
+|überprüfe ob der Text|Test log: SucheSignalIdunaTest|vorhanden ist|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,ExecutionTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.runTest|aus|
+# Maske: Allgemein
+-!|script|
+|warte|1|Sekunden|
+# Maske: Dialog: Test ausführen
+-!|script|
+|Button|dialog.common.close|betätigen wenn dieser aktiv ist|
+# Maske: Allgemein
+-!|script|
+|überprüfe ob der Text|Test log: ExecutionTest|vorhanden ist|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

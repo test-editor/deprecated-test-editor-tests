@@ -1,0 +1,5 @@
+!1 TestEditorTests
+
+
+
+!note Release ${FITNESSE_VERSION}

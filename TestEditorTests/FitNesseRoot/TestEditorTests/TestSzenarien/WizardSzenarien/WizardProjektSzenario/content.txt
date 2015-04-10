@@ -1,0 +1,7 @@
+!|scenario |WizardProjektSzenario _|Name|
+|note|Description: Das Szenario erwartet als Parameter einen gültigen Projekt-Namen. Es wird der Wizard zum Erzeugen des Projektes geöffnet und ein neues Projekt angelegt.|
+|note| Maske: View: Test-Explorer|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestprojekt|aus|
+|note| Maske: Wizard: Neues Projekt|
+|gebe in das Feld|wizard.newTestcase.nameText|den Wert|@{Name}|ein|
+|klicke auf|wizard.newTestproject.finishButton|

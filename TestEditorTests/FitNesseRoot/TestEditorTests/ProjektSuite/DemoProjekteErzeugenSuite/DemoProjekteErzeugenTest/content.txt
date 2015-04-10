@@ -1,0 +1,42 @@
+Dieser Testfall testet das Löschen und Anlegen von Demo-Projekten in verschiedener Reihenfolge. Zunächst wird das "DemoWebTests" Projekt gelöscht, was standardmäßig im Workspace des Test-Editors vorhanden ist. Anschließend werden Demo-Projekte angelegt, geprüft ob Sie im Test-Explorer korrekt angezeigt werden und schließlich wieder gelöscht. x
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|alle Projekte löschen|
+|prüfe ob die Anzahl der Projekte|0|entspricht|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.file|aus|
+# Maske: Allgemein: Menü->Datei
+-!|script|
+|wähle den Menüeintrag|menu.new.demo.projects|aus|
+# Maske: Wizard: Demoprojekte erzeugen
+-!|script|
+|prüfe ob die Checkbox|wizard.demoProjects.demo.swing.tests|deselektiert ist|
+|klicke Checkbox|wizard.demoProjects.demo.swing.tests|
+|prüfe ob die Checkbox|wizard.demoProjects.demo.swing.tests|selektiert ist|
+|prüfe ob die Checkbox|wizard.demoProjects.demo.web.tests|deselektiert ist|
+|klicke Checkbox|wizard.demoProjects.demo.web.tests|
+|prüfe ob die Checkbox|wizard.demoProjects.demo.web.tests|selektiert ist|
+|klicke auf|wizard.demoProjects.finishButton|
+# Maske: View: Test-Explorer
+-!|script|
+|prüfe ob die Anzahl der Projekte|2|entspricht|
+Weiteres Projekt über Projekt neu anlegen
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestprojekt|aus|
+# Maske: Wizard: Neues Projekt
+-!|script|
+|gebe in das Feld|wizard.newTestcase.nameText|den Wert|TestProjekt|ein|
+|klicke auf|wizard.newTestproject.finishButton|
+# Maske: View: Test-Explorer
+-!|script|
+|prüfe ob die Anzahl der Projekte|3|entspricht|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

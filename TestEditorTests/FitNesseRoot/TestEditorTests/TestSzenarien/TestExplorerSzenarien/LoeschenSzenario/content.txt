@@ -1,0 +1,7 @@
+!|scenario |LoeschenSzenario _|Pfad|
+|note|Description: Das Szenario erwartet einen gültigen Pfad zu einem Element (z.B. Testfall, Suite, ...). Es wird über den Test-Explorer das Element gelöscht. Die Sicherheitsabfrage wird mit OK bestätigt.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{Pfad}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.deleteElement|aus|
+|note| Maske: Dialog: Löschen|
+|klicke auf|dialog.delete.okButton|

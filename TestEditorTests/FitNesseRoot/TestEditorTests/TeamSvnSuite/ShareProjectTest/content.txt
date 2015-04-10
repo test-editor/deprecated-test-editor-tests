@@ -1,0 +1,27 @@
+Test to share a Project from the Test-Editor Workspace to the Team Provider SVN. The SVn Repo is created as a hidden directory in the WS before the Test starts. New comment
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.shareProject|aus|
+# Maske: Allgemein
+-!|script|
+|$wsPath=|getWorkspacePath|
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardProjektTeilenSzenario
+!|Wizard Projekt Teilen Szenario|
+|url|name|passwort|
+|file://$wsPath/.repo/testrepo/|foo|ba|
+#
+# Maske: Allgemein
+-!|script|
+|ist der Wert|svn-team-share|am Schlüssel|teamshare_plugin_id|hinterlegt in der datei|$wsPath/DemoWebTests/config.tpr|
+Wait for one second, to allow reading the properie file, bevore the clean up operation removes it.
+# Maske: Allgemein
+-!|script|
+|warte|1|Sekunden|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

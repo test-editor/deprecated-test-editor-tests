@@ -1,0 +1,12 @@
+!|scenario |UmbenennenFehleingabeSzenario _|Pfad, NeuerName, Fehlermeldung|
+|note|Description: Das Szenario erwartet einen gültigen Pfad zu einem Element (z.B. Testfall, Suite, ...) sowie einen ungültigen neuen Namen für das Element. Es wird über den Test-Explorer versucht das Element umzubenennen, was auf Grund der Falscheingabe nicht möglich sein darf. Nach der entsprechenden Prüfung wird das Umbenennen abgebrochen.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{Pfad}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.rename|aus|
+|note| Maske: Wizard: Umbenennen|
+|gebe in das Feld|wizard.rename.nameText|den Wert|@{NeuerName}|ein|
+|note| Maske: Allgemein|
+|überprüfe ob der Text|@{Fehlermeldung}|vorhanden ist|
+|note| Maske: Wizard: Umbenennen|
+|prüfe ob der Button|wizard.rename.finishButton|deaktiviert ist|
+|klicke auf|wizard.rename.cancelButton|

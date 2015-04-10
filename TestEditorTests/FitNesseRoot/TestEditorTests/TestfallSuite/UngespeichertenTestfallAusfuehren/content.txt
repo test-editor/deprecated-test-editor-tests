@@ -1,0 +1,31 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,ExecutionTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Beschreibung
+-!|script|
+|gebe in das Feld|view.description.descriptionText|den Wert|Foo|ein|
+|klicke auf|view.description.addButton|
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.runTest|aus|
+# Maske: Dialog: Allgemein
+-!|script|
+|klicke auf|dialog.common.okButton|
+# Maske: Allgemein
+-!|script|
+|warte|2|Sekunden|
+# Maske: Dialog: Test ausführen
+-!|script|
+|Button|dialog.common.close|betätigen wenn dieser aktiv ist|
+# Maske: Allgemein
+-!|script|
+|warte|2|Sekunden|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

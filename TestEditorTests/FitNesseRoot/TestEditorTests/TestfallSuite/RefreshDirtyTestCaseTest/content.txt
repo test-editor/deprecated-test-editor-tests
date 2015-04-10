@@ -1,0 +1,40 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.shareProject|aus|
+# Maske: Allgemein
+-!|script|
+|$wsPath=|getWorkspacePath|
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardProjektTeilenSzenario
+!|Wizard Projekt Teilen Szenario|
+|url|name|passwort|
+|file://$wsPath/.repo/testrepo/|foo|ba|
+#
+# Maske: Allgemein
+-!|script|
+|warte|3|Sekunden|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Beschreibung
+-!|script|
+|gebe in das Feld|view.description.descriptionText|den Wert|foo|ein|
+|klicke auf|view.description.addButton|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.revertChanges|aus|
+# Maske: Dialog: Revert
+-!|script|
+|klicke auf|dialog.revert.finishButton|
+# Maske: Dialog: Allgemein
+-!|script|
+|klicke auf|dialog.common.okButton|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

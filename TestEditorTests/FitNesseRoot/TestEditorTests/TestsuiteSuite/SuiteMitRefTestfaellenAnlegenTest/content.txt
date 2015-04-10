@@ -1,0 +1,35 @@
+Dieser Testfall prüft, ob für eine neue Suite referenzierte Testfälle hinzugefügt und wieder gelöscht werden können.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestsuiteSzenario
+!|Wizard Testsuite Szenario|
+|Pfad|Name|
+|DemoWebTests|LocalCiSuite|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalCiSuite|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Testsuite
+-!|script|
+|klicke auf|ID::add.referred.testcase|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+# Maske: Dialog: Testfall Auswahl
+-!|script|
+|klicke auf|ID::dialog.referred.testcase.ok|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.file|aus|
+|wähle den Menüeintrag|common.menu.save|aus|
+# Maske: View: Testsuite
+-!|script|
+|selektiere Index|0|
+|klicke auf|ID::remove.referred.testcase|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

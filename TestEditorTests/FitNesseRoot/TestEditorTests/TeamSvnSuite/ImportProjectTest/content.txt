@@ -1,0 +1,15 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.TeamScenarien.ImportDemoSharedProjectSzenario
+!|script|
+|Import Demo Shared Project Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|SharedProject,MySuite,SecondTest|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

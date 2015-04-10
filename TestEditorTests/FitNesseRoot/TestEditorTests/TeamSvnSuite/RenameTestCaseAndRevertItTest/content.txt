@@ -1,0 +1,34 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.TeamScenarien.ImportDemoSharedProjectSzenario
+!|script|
+|Import Demo Shared Project Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|SharedProject,MySuite,SecondTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.rename|aus|
+# Maske: Wizard: Umbenennen
+-!|script|
+|gebe in das Feld|wizard.rename.nameText|den Wert|ThirdTest|ein|
+|klicke auf|wizard.rename.finishButton|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|SharedProject,MySuite,ThirdTest|
+|navigiere zum Element|SharedProject|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.revertChanges|aus|
+# Maske: Dialog: Revert
+-!|script|
+|klicke auf|dialog.revert.finishButton|
+# Maske: Dialog: Quellcode
+-!|script|
+|klicke auf|dialog.sourceCode.okButton|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|SharedProject,MySuite,SecondTest|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

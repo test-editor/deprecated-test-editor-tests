@@ -1,0 +1,25 @@
+Checkout a project with the same name as an workspace project should force an error message.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.TeamScenarien.ImportDemoSharedProjectSzenario
+!|script|
+|Import Demo Shared Project Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.importProject|aus|
+# Maske: Wizard: Projekt importieren
+-!|script|
+|gebe in das Feld|wizard.shareProject.projectname|den Wert|SharedProject|ein|
+# Maske: Allgemein
+-!|script|
+|überprüfe ob der Text|Ein Projekt mit dem Namen existiert bereits.|vorhanden ist|
+# Maske: Wizard: Projekt importieren
+-!|script|
+|klicke auf|wizard.shareProject.cancelButton|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

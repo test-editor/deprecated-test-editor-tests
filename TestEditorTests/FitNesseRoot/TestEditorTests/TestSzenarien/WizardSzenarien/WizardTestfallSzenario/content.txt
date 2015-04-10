@@ -1,0 +1,8 @@
+!|scenario |WizardTestfallSzenario _|Pfad, Name|
+|note|Description: Das Szenario erwartet als Parameter einen gültigen Pfad (z.B. darüberliegende Suite) und einen gültigen Testfall-Namen. Es wird der Wizard zum Erzeugen des Testfalls geöffnet und der Testfall angelegt.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{Pfad}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestcase|aus|
+|note| Maske: Wizard: Neuer Testfall|
+|gebe in das Feld|wizard.newTestcase.nameText|den Wert|@{Name}|ein|
+|klicke auf|wizard.newTestcase.finishButton|

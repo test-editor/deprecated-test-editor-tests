@@ -1,0 +1,9 @@
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!include <TestEditorTests.TestSzenarien.TestfallSzenarien.TestschritteHinzufuegenSzenario
+
+!|scenario |BasisTestfallAnlegenSzenario _||
+|note|Description: Das Szenario erzeugt einen neuen Basis-Testfall im Projekt "DemoWebTests" mit einem Namen "DemoTest". Der Testfall wird über den Wizard "Neuer Testfall" erzeugt, anschließend wird eine Beschreibung sowie exemplarische Testschritte hinzugefügt und der Testfall gespeichert.|
+|note|scenario|
+|WizardTestfallSzenario;|DemoWebTests,LocalDemoSuite,LoginSuite|DemoTest|
+|note|scenario|
+|TestschritteHinzufuegenSzenario|

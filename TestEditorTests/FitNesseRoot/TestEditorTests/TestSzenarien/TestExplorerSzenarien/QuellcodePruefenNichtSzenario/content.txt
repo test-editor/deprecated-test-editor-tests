@@ -1,0 +1,8 @@
+!|scenario |QuellcodePruefenNichtSzenario _|ElementPfad, TextNichtVorhanden|
+|note|Description: Das Szenario erwartet einen gültigen Pfad zu einem Element (z.B. Testfall, Suite, ...). Es öffnet den Quellcode für das Element über den Test-Explorer und überprüft, ob der übergebene Text nicht vorhanden ist.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@ElementPfad|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.openSource|aus|
+|note| Maske: Dialog: Quellcode|
+|prüfe ob im Textblock|infodialog.text|der Text|@TextNichtVorhanden|nicht vorhanden ist|
+|klicke auf|dialog.sourceCode.okButton|

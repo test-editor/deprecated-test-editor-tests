@@ -1,0 +1,15 @@
+!|scenario |WizardProjektTeilenSzenario _|url, name, passwort|
+|note|Description: Dieses Szenario erwartet Daten zum Teilen eines Projektes.|
+|note| Maske: Wizard: Projekt teilen|
+|prüfe ob der Button|wizard.shareProject.finishButton|deaktiviert ist|
+|prüfe ob der Button|wizard.shareProject.cancelButton|aktiviert ist|
+|gebe in das Feld|wizard.shareProject.urlText|den Wert|@{url}|ein|
+|prüfe ob der Button|wizard.shareProject.finishButton|aktiviert ist|
+|prüfe ob der Button|wizard.shareProject.cancelButton|aktiviert ist|
+|gebe in das Feld|wizard.shareProject.nameText|den Wert|@{name}|ein|
+|prüfe ob der Button|wizard.shareProject.finishButton|aktiviert ist|
+|prüfe ob der Button|wizard.shareProject.cancelButton|aktiviert ist|
+|gebe in das Feld|wizard.shareProject.PasswordText|den Wert|@{passwort}|ein|
+|prüfe ob der Button|wizard.shareProject.finishButton|aktiviert ist|
+|prüfe ob der Button|wizard.shareProject.cancelButton|aktiviert ist|
+|klicke auf|wizard.shareProject.finishButton|

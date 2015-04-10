@@ -1,0 +1,16 @@
+Dieser Testfall ruft den Wizard zum Erstellen eines Testfalls auf und überprüft unterschiedliche Kombinationen von Fehleingaben (z.B. ungültiger Name) auf deren Fehlermeldung.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallFehleingabeSzenario
+!|WizardTestfallFehleingabeSzenario|
+|Pfad|Name|Fehlermeldung|
+|DemoWebTests,LocalDemoSuite|kleinerTest|Der Name entspricht nicht dem vorgegebenen Muster|
+|DemoWebTests,LocalDemoSuite|EinSonderzeichen&|Der Name entspricht nicht dem vorgegebenen Muster|
+|DemoWebTests,LocalDemoSuite,LoginSuite|LoginValidTest|Der Name daf nicht das Wort "Test" enthalten|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

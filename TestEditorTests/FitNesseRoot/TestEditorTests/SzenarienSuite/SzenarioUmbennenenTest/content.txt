@@ -1,0 +1,31 @@
+Dieser Testfall testet, dass nach dem umbennen eines TestSzenarios, das nicht geöffnet ist, der Inhalt weiterhin vorhanden ist.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardSzenarioSzenario
+!|Wizard Szenario Szenario|
+|Pfad|Name|
+|DemoWebTests,TestSzenarien|DemoSzenario|
+#
+!include <TestEditorTests.TestSzenarien.TestfallSzenarien.TestschritteHinzufuegenSzenario
+!|script|
+|Testschritte Hinzufuegen Szenario|
+#
+# Maske: Allgemein
+-!|script|
+|schließe den Reiter|DemoSzenario|
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.UmbenennenSzenario
+!|Umbenennen Szenario|
+|Pfad|NeuerName|
+|DemoWebTests,TestSzenarien,DemoSzenario|DemoSzenario2|
+#
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.QuellcodePruefenSzenario
+!|Quellcode Pruefen Szenario|
+|ElementPfad|TextVorhanden|
+|DemoWebTests,TestSzenarien,DemoSzenario2|Dies sind einfache Testschritte|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

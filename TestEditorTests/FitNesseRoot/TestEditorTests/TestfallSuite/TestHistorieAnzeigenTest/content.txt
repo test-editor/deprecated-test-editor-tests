@@ -1,0 +1,28 @@
+Dieser Testfall legt einen neuen Testfall an. Anschließend wird die Testhistorie für diesen Testfall geöffnet und überprüft ob die Testhistorie für diesen Testfall angezeigt wird.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|DemoWebTests,LocalDemoSuite|MeinHistorieTest|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,MeinHistorieTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.showHistory|aus|
+# Maske: View: Testhistorie
+-!|script|
+|überprüfe ob die Beschriftung|view.testHistory.label|dem Text|Testhistorie von: MeinHistorieTest|entspricht|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Testhistorie
+-!|script|
+|überprüfe ob die Beschriftung|view.testHistory.label|dem Text|Testhistorie von: LoginValidTest|entspricht|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

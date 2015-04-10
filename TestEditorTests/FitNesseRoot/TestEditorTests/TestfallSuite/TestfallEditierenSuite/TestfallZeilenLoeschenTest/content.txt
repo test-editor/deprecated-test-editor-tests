@@ -1,0 +1,31 @@
+Es wird der Basis-Testfall (siehe Szenarien) angelegt und der Inhalt in mehreren Schritten gelöscht. Nach jedem Schritt wird überprüft, ob das Speichern funktioniert in dem der Quellcode des Testfalls überprüft wird. Als letzter Schritt wird der Testfall über den Test-Explorer komplett gelöscht um den Initalzustand wiederherzustellen.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.TestfallSzenarien.BasisTestfallAnlegenSzenario
+!|script|
+|Basis Testfall Anlegen Szenario|
+#
+# Maske: View: Testfall
+-!|script|
+|markiere in dem Text|view.text|die Zeile|starte Browser Firefox|an Position|0|
+|sende Tastaturkommando|view.editTestcase.delete|an die Testfallansicht|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.file|aus|
+|wähle den Menüeintrag|common.menu.save|aus|
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.QuellcodePruefenSzenario
+!|Quellcode Pruefen Szenario|
+|ElementPfad|TextVorhanden|
+|DemoWebTests,LocalDemoSuite,LoginSuite,DemoTest|Dies sind einfache Testschritte|
+#
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.QuellcodePruefenNichtSzenario
+!|Quellcode Pruefen Nicht Szenario|
+|ElementPfad|TextNichtVorhanden|
+|DemoWebTests,LocalDemoSuite,LoginSuite,DemoTest|starte Browser|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

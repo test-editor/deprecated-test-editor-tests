@@ -1,0 +1,13 @@
+!|scenario |WizardTestfallFehleingabeSzenario _|Pfad, Name, Fehlermeldung|
+|note|Description: Das Szenario erwartet als Parameter einen gültigen Pfad (z.B. darüberliegende Suite) und einen ungültigen Testfall-Namen. Es wird der Wizard zum Erzeugen des Testfalls geöffnet und überprüft, ob der Wizard den ungültigen Namen erkennt und eine Testfallanlage verweigert.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{Pfad}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestsuite|aus|
+|note| Maske: Wizard: Neuer Testfall|
+|gebe in das Feld|wizard.newTestcase.nameText|den Wert|@{Name}|ein|
+|note| Maske: Allgemein|
+|überprüfe ob der Text|@{Fehlermeldung}|vorhanden ist|
+|note| Maske: Wizard: Neuer Testfall|
+|prüfe ob der Button|wizard.newTestcase.finishButton|deaktiviert ist|
+|prüfe ob der Button|wizard.newTestcase.cancelButton|aktiviert ist|
+|klicke auf|wizard.newTestcase.cancelButton|

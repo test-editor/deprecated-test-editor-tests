@@ -1,0 +1,17 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|DemoWebTests,LocalDemoSuite,LoginSuite|DemoTest|
+#
+# Maske: View: Szenario
+-!|script|
+|navigiere im Auswahlbaum|chose.scenario|zum Element|TestSzenarien|
+|prüfe ob im Auswahlbaum|chose.scenario|das Element|TestSzenarien|genau|4|Kinder hat|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

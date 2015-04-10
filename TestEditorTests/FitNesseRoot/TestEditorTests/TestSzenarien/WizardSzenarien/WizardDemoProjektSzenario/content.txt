@@ -1,0 +1,8 @@
+!|scenario |WizardDemoProjektSzenario _|DemoProjekt|
+|note| Maske: Allgemein: Menü|
+|wähle den Menüeintrag|common.menu.file|aus|
+|note| Maske: Allgemein: Menü->Datei|
+|wähle den Menüeintrag|menu.new.demo.projects|aus|
+|note| Maske: Wizard: Demoprojekte erzeugen|
+|klicke Checkbox per Label|@{DemoProjekt}|
+|klicke auf|wizard.demoProjects.finishButton|

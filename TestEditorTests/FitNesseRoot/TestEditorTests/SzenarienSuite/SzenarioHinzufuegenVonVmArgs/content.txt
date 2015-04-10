@@ -1,0 +1,39 @@
+Dieser Test fügt ein Argument mit Klammern "{" "}" hinzu einem Szenario. Er prüft ob das Argument dem Szenario hinzugefügt wurde, aber nicht als Parameter.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,TestSzenarien,OeffneStartseiteSzenario|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Testfall
+-!|script|
+|markiere in dem Text|view.text|die Zeile|8|an Position|1|
+Eingabe mit Klammern tätigen
+# Maske: View: Testschritt
+-!|script|
+|wähle in Feld|view.teststep.maskChoice|den Wert|Lokale Anmeldung|aus|
+|wähle in Feld|view.teststep.stepChoice|den Wert|Wert eingeben|aus|
+|wähle in Feld|view.teststep.valueChoiceField|den Wert|Name|aus|
+|gebe in das Feld|view.teststep.valueText|den Wert|{fooBar}|ein|
+|klicke auf|view.teststep.addButton|
+Testfall über den Button "Speichern" sichern
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.file|aus|
+|wähle den Menüeintrag|common.menu.save|aus|
+Prüfen ob {fooBar} in Testvorhanden ist
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.QuellcodePruefenSzenario
+!|Quellcode Pruefen Szenario|
+|ElementPfad|TextVorhanden|
+|DemoWebTests,TestSzenarien,OeffneStartseiteSzenario|{fooBar}|
+#
+Prüfen ob {fooBar} kein Parameter ist
+# Maske: Allgemein
+-!|script|
+|prüfe ob in Test|DemoWebTests,TestSzenarien,OeffneStartseiteSzenario|der Text|fooBar|in Zeile|1|nicht vorhanden ist|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

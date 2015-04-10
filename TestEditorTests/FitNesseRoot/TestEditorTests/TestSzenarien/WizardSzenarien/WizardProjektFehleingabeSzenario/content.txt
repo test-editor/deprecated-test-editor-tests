@@ -1,0 +1,12 @@
+!|scenario |WizardProjektFehleingabeSzenario _|Name, Fehlermeldung|
+|note|Description: Das Szenario erwartet als Parameter einen ungültigen Projekt-Namen. Es wird der Wizard zum Erzeugen des Projektes geöffnet und überprüft, ob der Wizard den ungültigen Namen erkennt und eine Projektanlage verweigert.|
+|note| Maske: View: Test-Explorer|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestprojekt|aus|
+|note| Maske: Wizard: Neues Projekt|
+|gebe in das Feld|wizard.newTestcase.nameText|den Wert|@{Name}|ein|
+|note| Maske: Allgemein|
+|überprüfe ob der Text|@{Fehlermeldung}|vorhanden ist|
+|note| Maske: Wizard: Neues Projekt|
+|prüfe ob der Button|wizard.newTestproject.cancelButton|aktiviert ist|
+|prüfe ob der Button|wizard.newTestproject.finishButton|deaktiviert ist|
+|klicke auf|wizard.newTestproject.cancelButton|

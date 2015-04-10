@@ -1,0 +1,15 @@
+Dieser Testfall ruft den Wizard zum Erstellen einer Szenariosuite auf und überprüft unterschiedliche Kombinationen von Fehleingaben (z.B. ungültiger Name) auf deren Fehlermeldung.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardSzenarioFehleingabeSzenario
+!|Wizard Szenario Fehleingabe Szenario|
+|Pfad|Name|Fehlermeldung|
+|DemoWebTests,TestSzenarien|DOppelteGrossBuchstaben|Der Name entspricht nicht dem vorgegebenen Muster|
+|DemoWebTests,TestSzenarien|MitSonderzeichen&|Der Name entspricht nicht dem vorgegebenen Muster|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

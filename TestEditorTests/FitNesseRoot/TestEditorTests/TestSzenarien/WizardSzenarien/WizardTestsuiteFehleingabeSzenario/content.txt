@@ -1,0 +1,13 @@
+!|scenario |WizardTestsuiteFehleingabeSzenario _|Pfad, Name, Fehlermeldung|
+|note|Description: Das Szenario erwartet als Parameter einen gültigen Pfad (z.B. Projekt oder darüberliegende Suite) und einen ungültigen Suite-Namen. Es wird der Wizard zum Erzeugen der Suite geöffnet und überprüft, ob der Wizard den ungültigen Namen erkennt und eine Suiteanlage verweigert.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{Pfad}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestsuite|aus|
+|note| Maske: Wizard: Neue Testsuite|
+|gebe in das Feld|wizard.newTestsuite.nameText|den Wert|@{Name}|ein|
+|note| Maske: Allgemein|
+|überprüfe ob der Text|@{Fehlermeldung}|vorhanden ist|
+|note| Maske: Wizard: Neue Testsuite|
+|prüfe ob der Button|wizard.newTestsuite.cancelButton|aktiviert ist|
+|prüfe ob der Button|wizard.newTestsuite.finishButton|deaktiviert ist|
+|klicke auf|wizard.newTestsuite.cancelButton|

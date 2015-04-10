@@ -1,0 +1,9 @@
+!|scenario |WizardSzenarioSuiteSzenario _|Pfad, Name|
+|note|Description: Pfad, Name|
+|note|Description: Das Szenario erwartet als Parameter einen gültigen Pfad (z.B. Projekt oder darüberliegende Suite) und einen gültigen Suite-Namen. Es wird der Wizard zum Erzeugen der Suite geöffnet und ein neues Suite angelegt.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{Pfad}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newScenariosuite|aus|
+|note| Maske: Wizard: Neue Szenariosuite|
+|gebe in das Feld|wizard.newSzenariosuite.nameText|den Wert|@{Name}|ein|
+|klicke auf|wizard.newSzenariosuite.finishButton|

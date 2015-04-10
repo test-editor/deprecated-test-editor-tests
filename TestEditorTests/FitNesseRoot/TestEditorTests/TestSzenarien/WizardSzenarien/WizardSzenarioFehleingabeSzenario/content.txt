@@ -1,0 +1,13 @@
+!|scenario |WizardSzenarioFehleingabeSzenario _|Pfad, Name, Fehlermeldung|
+|note|Description: Das Szenario erwartet als Parameter einen gültigen Pfad (z.B. darüberliegende Szenarien-Suite) und einen ungültigen Szenario-Namen. Es wird der Wizard zum Erzeugen des Szenarios geöffnet und überprüft, ob der Wizard den ungültigen Namen erkennt und eine Szenarioanlage verweigert.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{Pfad}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestscenario|aus|
+|note| Maske: Wizard: Neues Szenario|
+|gebe in das Feld|wizard.newTestscenario.nameText|den Wert|@{Name}|ein|
+|note| Maske: Allgemein|
+|überprüfe ob der Text|@{Fehlermeldung}|vorhanden ist|
+|note| Maske: Wizard: Neues Szenario|
+|prüfe ob der Button|wizard.newTestscenario.cancelButton|aktiviert ist|
+|prüfe ob der Button|wizard.newTestscenario.finishButton|deaktiviert ist|
+|klicke auf|wizard.newTestscenario.cancelButton|

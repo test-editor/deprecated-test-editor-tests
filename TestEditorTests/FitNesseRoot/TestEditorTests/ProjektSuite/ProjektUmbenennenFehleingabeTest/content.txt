@@ -1,0 +1,20 @@
+Dieser Testfall erstellt ein neues Projekt und überprüft die Fehlermeldungen, die erscheinen wenn beim Umbenennen des Projektes ein fehlerhafter Name eingegeben wird.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardProjektSzenario
+!|WizardProjektSzenario|
+|Name|
+|ProjektTests|
+#
+!!!!!!! Hinweis !!!!!!! Außerdem wäre es sinnvoll diese Tabelle um weitere Kominationen (z.B. auch Name ungültig: Eingrossbuchstabe, Ein&Sonderzeichen, ...) zu erweitern!
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.UmbenennenFehleingabeSzenario
+!|UmbenennenFehleingabeSzenario|
+|Pfad|NeuerName|Fehlermeldung|
+|ProjektTests|DemoWebTests|Name ist bereits vorhanden!|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

@@ -1,0 +1,14 @@
+Dieser Testfall löscht eine bestehende Suite im Projekt "DemoWebTests", bei der Unterelemente (weitere Suiten, Testfälle) existieren.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.LoeschenSzenario
+!|Loeschen Szenario|
+|Pfad|
+|DemoWebTests,LocalDemoSuite|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

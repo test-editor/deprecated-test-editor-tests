@@ -1,0 +1,34 @@
+Dieser Testfall erzeugt eine neue Szenariosuite im "DemoWebTests" Projekt. Die Szenariosuite erhält dann noch ein Szenario und anschließend werden beide gelöscht.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardSzenarioSuiteSzenario
+!|Wizard Szenario Suite Szenario|
+|Pfad|Name|
+|DemoWebTests,TestSzenarien|MySzenarien|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,TestSzenarien,MySzenarien|
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardSzenarioSzenario
+!|Wizard Szenario Szenario|
+|Pfad|Name|
+|DemoWebTests,TestSzenarien,MySzenarien|MeinSzenario|
+#
+=====> Hinweis: <====
+Jetzt müsste geprüft werden ob die SzenarioSuite gelöscht werden kann. Bzw. das Kontextmenü "Löschen" für die neu angelegte SzenarioSuite inaktiv ist.
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.LoeschenSzenario
+!|Loeschen Szenario|
+|Pfad|
+|DemoWebTests,TestSzenarien,MySzenarien,MeinSzenario|
+#
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.LoeschenSzenario
+!|Loeschen Szenario|
+|Pfad|
+|DemoWebTests,TestSzenarien,MySzenarien|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

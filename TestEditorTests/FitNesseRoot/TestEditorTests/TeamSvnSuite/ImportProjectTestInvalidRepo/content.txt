@@ -1,0 +1,27 @@
+Test for [TE-89] if the user input in the import wizard is not valid (url, project nanme or credentials), the dialog was closed, an error dialog pops up, but after that the user had to start the import wizard again. Now the wizard reapears and allows a correction of the input. The OK button ("Fertigstellen") should be enabled when the wizard reopens.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: Allgemein
+-!|script|
+|$wsPath=|getWorkspacePath|
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.importProject|aus|
+# Maske: Wizard: Projekt importieren
+-!|script|
+|gebe in das Feld|wizard.shareProject.projectname|den Wert|SharedProject|ein|
+|gebe in das Feld|wizard.shareProject.urlText|den Wert|http://do.is.nix.de|ein|
+|klicke auf|wizard.shareProject.finishButton|
+# Maske: Dialog: Error
+-!|script|
+|klicke auf|dialog.error.okButton|
+# Maske: Wizard: Projekt importieren
+-!|script|
+|prüfe ob der Button|wizard.shareProject.finishButton|aktiviert ist|
+|klicke auf|wizard.shareProject.cancelButton|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

@@ -1,0 +1,40 @@
+!|scenario |TestschritteHinzufuegenSzenario _||
+|note|Description: Beschreibung "Dieser Test überprüft..." hinzufügen|
+|note| Maske: View: Beschreibung|
+|gebe in das Feld|view.description.descriptionText|den Wert|Dies sind einfache Testschritte, die einen Testfall (oder Szenario) abbilden.|ein|
+|klicke auf|view.description.addButton|
+|note|Description: Testschritt "Browser Starten" hinzufügen|
+|note| Maske: View: Testschritt|
+|wähle in Feld|view.teststep.maskChoice|den Wert|Allgemein Browser|aus|
+|wähle in Feld|view.teststep.stepChoice|den Wert|Browser starten|aus|
+|wähle in Feld|view.teststep.valueChoiceBrowser|den Wert|Firefox|aus|
+|klicke auf|view.teststep.addButton|
+|note|Description: Testschritt "Navigiere zur URL" hinzufügen|
+|note| Maske: View: Testschritt|
+|wähle in Feld|view.teststep.maskChoice|den Wert|Allgemein Browser|aus|
+|wähle in Feld|view.teststep.stepChoice|den Wert|Seite navigieren|aus|
+|gebe in das Feld|view.teststep.urlText|den Wert|http://localhost:8060/files/demo/ExampleApplication/WebApplicationDe/index.html|ein|
+|klicke auf|view.teststep.addButton|
+|note|Description: Testschritt "Name eingeben" hinzufügen|
+|note| Maske: View: Testschritt|
+|wähle in Feld|view.teststep.maskChoice|den Wert|Lokale Anmeldung|aus|
+|wähle in Feld|view.teststep.stepChoice|den Wert|Wert eingeben|aus|
+|wähle in Feld|view.teststep.valueChoiceField|den Wert|Name|aus|
+|gebe in das Feld|view.teststep.valueText|den Wert|Name|ein|
+|klicke auf|view.teststep.addButton|
+|note|Description: Testschritt "Passwort eingeben" hinzufügen|
+|note| Maske: View: Testschritt|
+|wähle in Feld|view.teststep.maskChoice|den Wert|Lokale Anmeldung|aus|
+|wähle in Feld|view.teststep.stepChoice|den Wert|Wert eingeben|aus|
+|wähle in Feld|view.teststep.valueChoiceField|den Wert|Passwort|aus|
+|gebe in das Feld|view.teststep.valueText|den Wert|Passwort|ein|
+|klicke auf|view.teststep.addButton|
+|note|Description: Testschritt "Browser beenden" hinzufügen|
+|note| Maske: View: Testschritt|
+|wähle in Feld|view.teststep.maskChoice|den Wert|Allgemein Browser|aus|
+|wähle in Feld|view.teststep.stepChoice|den Wert|Browser beenden|aus|
+|klicke auf|view.teststep.addButton|
+|note|Description: Testfall (oder Szenario) über den Button "Speichern" sichern|
+|note| Maske: Allgemein: Menü|
+|wähle den Menüeintrag|common.menu.file|aus|
+|wähle den Menüeintrag|common.menu.save|aus|

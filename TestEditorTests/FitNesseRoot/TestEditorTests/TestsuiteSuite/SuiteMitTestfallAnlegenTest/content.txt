@@ -1,0 +1,23 @@
+Dieser Testfall erzeugt eine neue Suite im "DemoWebTests" Projekt. Die Suite wird geöffnet und anschließend wieder gelöscht.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestsuiteSzenario
+!|Wizard Testsuite Szenario|
+|Pfad|Name|
+|DemoWebTests|DemoSuite|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|WizardTestfallSzenario|
+|Pfad|Name|
+|DemoWebTests,DemoSuite|DemoTest|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,DemoSuite,DemoTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

@@ -1,0 +1,36 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.TeamScenarien.ImportDemoSharedProjectSzenario
+!|script|
+|Import Demo Shared Project Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|SharedProject,MySuite,SecondTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Beschreibung
+-!|script|
+|gebe in das Feld|view.description.descriptionText|den Wert|Foo|ein|
+|klicke auf|view.description.addButton|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|SharedProject|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.shareChanges|aus|
+# Maske: Dialog: Quellcode
+-!|script|
+|klicke auf|dialog.sourceCode.okButton|
+# Maske: Wizard: Projekt teilen
+-!|script|
+|klicke auf|wizard.shareProject.finishButton|
+# Maske: Dialog: Quellcode
+-!|script|
+|klicke auf|dialog.sourceCode.okButton|
+# Maske: Allgemein
+-!|script|
+|warte|1|Sekunden|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

@@ -1,0 +1,18 @@
+Es wird ein neuer Testfall im Test-Editor erzeugt. Der Testfall ist vergleichbar zu dem LoginValidTest unter DemoWebTests->LocalDemoSuite->LoginSuite. Es wird nur die Erzeugung des Testfalls mit seinen Beschreibungen und Testschritte überprüft, nicht jedoch die eigentliche Testausführung. Als letzter Schritt wird der Testfall über den Test-Explorer wieder gelöscht.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|DemoWebTests,LocalDemoSuite,LoginSuite|DemoMitTestschrittenTest|
+#
+!include <TestEditorTests.TestSzenarien.TestfallSzenarien.TestschritteHinzufuegenSzenario
+!|script|
+|Testschritte Hinzufuegen Szenario|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

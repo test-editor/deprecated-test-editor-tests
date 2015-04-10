@@ -1,0 +1,26 @@
+Dieser Testfall testet, ob alle derzeit verfügbaren Demo-Projekte angelegt werden können.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|alle Projekte löschen|
+|prüfe ob die Anzahl der Projekte|0|entspricht|
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardDemoProjektSzenario
+!|Wizard Demo Projekt Szenario|
+|DemoProjekt|
+|DemoSwingTests|
+|DemoWebRapTests|
+|DemoWebserviceRestTests|
+|DemoWebserviceSoapTests|
+|DemoWebTests|
+|DemoWebVaadinTests|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|prüfe ob die Anzahl der Projekte|6|entspricht|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

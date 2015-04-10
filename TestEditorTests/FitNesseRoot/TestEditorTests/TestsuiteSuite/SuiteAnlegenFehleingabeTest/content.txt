@@ -1,0 +1,20 @@
+Dieser Testfall ruft den Wizard zum Erstellen einer Testsuite auf und überprüft unterschiedliche Kombinationen von Fehleingaben (z.B. ungültiger Name) auf deren Fehlermeldung.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestsuiteFehleingabeSzenario
+!|WizardTestsuiteFehleingabeSzenario|
+|Pfad|Name|Fehlermeldung|
+|DemoWebTests|LocalDemoSuite|Name ist bereits vorhanden!|
+|DemoWebTests,LocalDemoSuite|LoginSuite|Name ist bereits vorhanden!|
+|DemoWebTests|TestSzenarien|TestSzenarien ist ein reservierter Begriff und darf nicht verwendet werden.|
+|DemoWebTests|kleineSuite|Der Name entspricht nicht dem vorgegebenen Muster|
+|DemoWebTests|Eingrossbuchstabe|Der Name entspricht nicht dem vorgegebenen Muster|
+|DemoWebTests|EinSonderzeichen§|Der Name entspricht nicht dem vorgegebenen Muster|
+|DemoWebTests|WortTestImNamen|Der Name daf nicht das Wort "Test" enthalten|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

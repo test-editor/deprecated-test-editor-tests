@@ -1,0 +1,29 @@
+Dieser Testfall erzeugt zwei Testfälle "TestfallA" und "TestfallB", anschließend wird der "TestfallA" in "TestfallC" umbenannt und geprüft, ob der Reiter des TestfallC korrekt umbenannt wurde, außerdem wird getestet ob die Testfälle mit den neuen Namen gelöscht werden können.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|DemoWebTests,LocalDemoSuite,LoginSuite|TestfallA|
+|DemoWebTests,LocalDemoSuite,LoginSuite|TestfallB|
+#
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.UmbenennenSzenario
+!|Umbenennen Szenario|
+|Pfad|NeuerName|
+|DemoWebTests,LocalDemoSuite,LoginSuite,TestfallA|TestfallC|
+#
+# Maske: Allgemein
+-!|script|
+|schließe den Reiter|TestfallB|
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.LoeschenSzenario
+!|Loeschen Szenario|
+|Pfad|
+|DemoWebTests,LocalDemoSuite,LoginSuite,TestfallB|
+|DemoWebTests,LocalDemoSuite,LoginSuite,TestfallC|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

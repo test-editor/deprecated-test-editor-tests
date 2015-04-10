@@ -1,0 +1,59 @@
+Dieser Testfall prüft, ob ein Demo-Projekt nur ein Mal erzeugt werden kann. Dazu werden zunächst alle Projekte gelöscht und um Anschluss das DemoWebTests-Projekt erzeugt. Anschließend wird der Wizard zum Anlegen der Demoprojekte erneut geöffnet und kontrolliert, dass das DemoWebTests-Projekt ausgegraut ist. Nach dem Löschen des Projekts kann es dann wieder über den Wizard ausgewählt werden.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|alle Projekte löschen|
+|prüfe ob die Anzahl der Projekte|0|entspricht|
+Das DemoWebTest-Projekt wird erzeugt
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.file|aus|
+# Maske: Allgemein: Menü->Datei
+-!|script|
+|wähle den Menüeintrag|menu.new.demo.projects|aus|
+# Maske: Wizard: Demoprojekte erzeugen
+-!|script|
+|prüfe ob die Checkbox|wizard.demoProjects.demo.web.tests|deselektiert ist|
+|klicke Checkbox|wizard.demoProjects.demo.web.tests|
+|prüfe ob die Checkbox|wizard.demoProjects.demo.web.tests|selektiert ist|
+|klicke auf|wizard.demoProjects.finishButton|
+# Maske: View: Test-Explorer
+-!|script|
+|prüfe ob die Anzahl der Projekte|1|entspricht|
+Es wird jetzt geprüft, dass das DemoWebTests-Projekt nicht mehr auswählbar ist, da es bereits existiert.
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.file|aus|
+# Maske: Allgemein: Menü->Datei
+-!|script|
+|wähle den Menüeintrag|menu.new.demo.projects|aus|
+# Maske: Wizard: Demoprojekte erzeugen
+-!|script|
+|prüfe ob die Checkbox|wizard.demoProjects.demo.web.tests|deaktiviert ist|
+|klicke auf|wizard.demoProjects.finishButton|
+Nach dem Löschen sollte das DemoWebTests-Projekt wieder auswählbar sein.
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.LoeschenSzenario
+!|Loeschen Szenario|
+|Pfad|
+|DemoWebTests|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|prüfe ob die Anzahl der Projekte|0|entspricht|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.file|aus|
+# Maske: Allgemein: Menü->Datei
+-!|script|
+|wähle den Menüeintrag|menu.new.demo.projects|aus|
+# Maske: Wizard: Demoprojekte erzeugen
+-!|script|
+|prüfe ob die Checkbox|wizard.demoProjects.demo.web.tests|deselektiert ist|
+|klicke auf|wizard.demoProjects.finishButton|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

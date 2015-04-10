@@ -1,0 +1,31 @@
+Dieser Testfall legt ein neues Projekt an und benennt das Projekt um. Dabei werden verschiedene Kombinationen getestet: Zunächst wird der Reiter für das Projekt offen gelassen, danach das Projekt umbenannt und getestet, ob der Name des Reiters auch umbeannt wurde (der Reiter wird über den Namen geschlossen). Anschließend wird das Projekt erneut umbenannt und getestet, ob das Projekt über den neuen Namen geöffnet werden kann.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardProjektSzenario
+!|Wizard Projekt Szenario|
+|Name|
+|EinfachesProjektA|
+#
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.UmbenennenSzenario
+!|Umbenennen Szenario|
+|Pfad|NeuerName|
+|EinfachesProjektA|EinfachesProjektB|
+#
+# Maske: Allgemein
+-!|script|
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.UmbenennenSzenario
+!|Umbenennen Szenario|
+|Pfad|NeuerName|
+|EinfachesProjektB|EinfachesProjektC|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|EinfachesProjektC|
+# Maske: Allgemein
+-!|script|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

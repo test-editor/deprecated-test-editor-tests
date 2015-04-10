@@ -1,0 +1,26 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,ExecutionTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Beschreibung
+-!|script|
+|gebe in das Feld|view.description.descriptionText|den Wert|Foo|ein|
+|klicke auf|view.description.addButton|
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.runTest|aus|
+# Maske: Dialog: Allgemein
+-!|script|
+|klicke auf|dialog.common.cancel|
+Teste das im Baum navigiert werden kann, und somit keine Test Ausführung läuft.
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#
