@@ -273,6 +273,11 @@
 		<actionPart position="5" type="TEXT" value="Kinder hat"/>
 	</TechnicalBindingType>
 
+	<TechnicalBindingType id="AutoCompletion_Selektieren" name="Vorschlag selektieren">
+		<actionPart position="1" type="TEXT" value="selektiere Vorschlag:" />
+		<actionPart position="2" type="ARGUMENT" />
+	</TechnicalBindingType>
+
 	<TechnicalBindingType id="Prüfe_Anzahl_Kindelemente_von_Tree" name="Kindelementeanzahl von Auswahlbaum prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob im Auswahlbaum" />
 		<actionPart position="2" type="ACTION_NAME" id="argument1" />

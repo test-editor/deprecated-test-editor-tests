@@ -189,3 +189,6 @@
 !|scenario|Button|locator|betätigen wenn dieser aktiv ist |
 |waitForButtonAndClick;|@locator|
 
+'''Selektiere Vorschlag in der Autocomplete Liste ''' --------
+!|scenario|selektiere Vorschlag:|item|
+|selectElementInAtuocompleteWidget;|@item|

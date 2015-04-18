@@ -1,0 +1,37 @@
+Tests that the autocompletion in the teststep view works.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|DemoWebTests|MyTest|
+#
+# Maske: View: Testschritt
+-!|script|
+|gebe in das Feld|view.teststep.maskChoice|den Wert|a|ein|
+# Maske: View: Auto Complete View
+-!|script|
+|selektiere Vorschlag:|Allgemein Browser|
+# Maske: View: Testschritt
+-!|script|
+|gebe in das Feld|view.teststep.stepChoice|den Wert|b|ein|
+# Maske: View: Auto Complete View
+-!|script|
+|selektiere Vorschlag:|Browser beenden|
+# Maske: View: Testschritt
+-!|script|
+|klicke auf|view.teststep.addButton|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.save|aus|
+!include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.QuellcodePruefenSzenario
+!|Quellcode Pruefen Szenario|
+|ElementPfad|TextVorhanden|
+|DemoWebTests,MyTest|beende Browser|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

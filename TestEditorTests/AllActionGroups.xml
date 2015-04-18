@@ -48,6 +48,10 @@
     
     <!-- Views -->
     
+    <ActionGroup name="View: Auto Complete View">
+		<action technicalBindingType="AutoCompletion_Selektieren" />
+    </ActionGroup>
+    
 	<ActionGroup name="View: Test-Explorer">
 		<action technicalBindingType="Element_Navigieren" />
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
@@ -236,6 +240,12 @@
         </action>
         <action technicalBindingType="Eingabe_Wert">
             <actionName locator="view.teststep.valueText">Wert</actionName>
+        </action>
+        <action technicalBindingType="Eingabe_Wert">
+            <actionName locator="view.teststep.maskChoice">Mask</actionName>
+        </action>
+        <action technicalBindingType="Eingabe_Wert">
+            <actionName locator="view.teststep.stepChoice">Schritt</actionName>
         </action>
         <action technicalBindingType="Button_Drücken">
             <actionName locator="view.teststep.addButton">Hinzufügen</actionName>
