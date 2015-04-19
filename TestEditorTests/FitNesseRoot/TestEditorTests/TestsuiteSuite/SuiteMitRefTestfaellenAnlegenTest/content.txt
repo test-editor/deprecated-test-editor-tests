@@ -29,6 +29,9 @@ Dieser Testfall prüft, ob für eine neue Suite referenzierte Testfälle hinzuge
 -!|script|
 |selektiere Index|0|
 |klicke auf|ID::remove.referred.testcase|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.save|aus|
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|
 |Applikation Stoppen Szenario|

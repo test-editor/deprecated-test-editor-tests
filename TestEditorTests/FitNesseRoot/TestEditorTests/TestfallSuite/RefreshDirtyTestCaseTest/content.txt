@@ -34,6 +34,14 @@
 # Maske: Dialog: Allgemein
 -!|script|
 |klicke auf|dialog.common.okButton|
+|klicke auf|dialog.common.okButton|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.save|aus|
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|
 |Applikation Stoppen Szenario|

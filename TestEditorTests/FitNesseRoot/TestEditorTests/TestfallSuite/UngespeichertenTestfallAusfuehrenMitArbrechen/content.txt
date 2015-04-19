@@ -20,6 +20,11 @@ Teste das im Baum navigiert werden kann, und somit keine Test Ausführung läuft
 # Maske: View: Test-Explorer
 -!|script|
 |navigiere zum Element|DemoWebTests,LocalDemoSuite|
+|navigiere zum Element|DemoWebTests,ExecutionTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.save|aus|
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|
 |Applikation Stoppen Szenario|
