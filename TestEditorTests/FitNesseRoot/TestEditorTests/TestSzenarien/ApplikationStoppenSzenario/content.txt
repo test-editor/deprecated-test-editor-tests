@@ -6,4 +6,4 @@
 |klicke auf|dialog.common.okButton|
 |note|Description: !!!!!!! Hinweis !!!!!!! Das warten auf 2 Sekunden ist derzeit notwendig, damit eine Suite von Testfällen korrekt ausgeführt werden kann. Das liegt daran, dass die AUT nicht synchron beendet wird und ein folgender Testfall sonst fehlschlägt, da die AUT dann nicht erneut gestartet werden kann. Die 2 Sek. sind also ein Workaround um sicherzustellen, dass die AUT beendet ist, besser wäre es das Beenden der Applikation im Test-Treiber korrekt abzubilden.|
 |note| Maske: Allgemein|
-|warte|2|Sekunden|
+|warte|3|Sekunden|
