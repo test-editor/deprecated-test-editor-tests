@@ -15,7 +15,7 @@
 #
 # Maske: Allgemein
 -!|script|
-|warte|3|Sekunden|
+|warte|10|Sekunden|
 # Maske: View: Test-Explorer
 -!|script|
 |navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
