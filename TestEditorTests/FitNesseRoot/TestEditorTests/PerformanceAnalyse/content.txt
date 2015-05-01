@@ -4,4 +4,3 @@
 !see .TestEditorTests.TestsuiteSuite.SuiteAnlegenFehleingabeTest
 !see .TestEditorTests.TestsuiteSuite.SuiteMitUnterelementenLoeschenTest
 !see .TestEditorTests.TestfallSuite.RefreshDirtyTestCaseTest
-!see .TestEditorTests.TestfallSuite.TestLogAnzeigenTest
