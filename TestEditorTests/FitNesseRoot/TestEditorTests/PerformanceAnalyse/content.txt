@@ -1,6 +1,2 @@
 !contents
 !see .TestEditorTests.ProjektSuite.ProjektAnlegenUndLoeschenTest
-!see .TestEditorTests.TestfallSuite.TestfallAnlegenFehleingabeTest
-!see .TestEditorTests.TestsuiteSuite.SuiteAnlegenFehleingabeTest
-!see .TestEditorTests.TestsuiteSuite.SuiteMitUnterelementenLoeschenTest
-!see .TestEditorTests.TestfallSuite.RefreshDirtyTestCaseTest
