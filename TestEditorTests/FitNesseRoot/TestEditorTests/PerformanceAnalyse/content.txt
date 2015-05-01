@@ -1,2 +1,4 @@
 !contents
 !see .TestEditorTests.ProjektSuite.ProjektAnlegenUndLoeschenTest
+!see .TestEditorTests.ProjektSuite.ProjektAnlegenFehleingabeTest
+!see .TestEditorTests.ProjektSuite.ProjektMitKomponentenAnlegenTest
