@@ -1,0 +1,8 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|ApplikationStartenSzenario|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|ApplikationStoppenSzenario|
+#
