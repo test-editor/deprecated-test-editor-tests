@@ -9,8 +9,6 @@
 !see .TestEditorTests.TestsuiteSuite.SuiteMitRefTestfaellenAnlegenTest
 !see .TestEditorTests.TestsuiteSuite.SuiteMitUnterelementenLoeschenTest
 !see .TestEditorTests.TestsuiteSuite.SuiteUmbenennenFehleingabeTest
-!see .TestEditorTests.TestfallSuite.TestHistorieAnzeigenTest
-!see .TestEditorTests.TestfallSuite.TestfallUmbenennenTest
 !see .TestEditorTests.TestsuiteSuite.SuiteMitTestfallAnlegenTest
 !see .TestEditorTests.TestfallSuite.TestHistorieAnzeigenTest
 !see .TestEditorTests.TestfallSuite.TestfallAnlegenFehleingabeTest
@@ -34,9 +32,7 @@
 !see .TestEditorTests.TeamSvnSuite.RenameTestCaseTest
 !see .TestEditorTests.TeamSvnSuite.SaveBeforeShareTest
 !see .TestEditorTests.TeamSvnSuite.ShareProjectTest
-!see .TestEditorTests.TestfallSuite.UngespeichertenTestfallAusfuehren
 !see .TestEditorTests.TestfallSuite.UngespeichertenTestfallAusfuehrenMitArbrechen
-!see .TestEditorTests.TestfallSuite.TestLogAnzeigenTest
 !see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.EditTestCaseWithPopDialogTest
 !see .TestEditorTests.TestfallSuite.RefreshDirtyTestCaseTest
 !see .TestEditorTests.TeamSvnSuite.ErrorMessageOnCheckoutProjectWithSameName
