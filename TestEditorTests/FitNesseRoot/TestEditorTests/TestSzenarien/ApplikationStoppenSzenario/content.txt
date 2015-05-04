@@ -8,3 +8,4 @@
 |note| Maske: Allgemein|
 |warte|2|Sekunden|
 |beende Test-Editor|
+|warte|1|Sekunden|
