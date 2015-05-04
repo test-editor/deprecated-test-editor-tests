@@ -16,12 +16,9 @@ Dieser Testfall ruft den Wizard zum Erstellen eines Projektes auf und testet ans
 |url|name|passwort|
 |projekt/url|Anwendername|Passwort|
 #
-# Maske: Allgemein
+# Maske: Dialog: Allgemein
 -!|script|
-|warte|1|Sekunden|
-# Maske: Dialog: Error
--!|script|
-|klicke auf|dialog.error.okButton|
+|klicke auf|dialog.common.okButton|
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|
 |Applikation Stoppen Szenario|
