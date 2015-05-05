@@ -36,3 +36,4 @@
 !see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.EditTestCaseWithPopDialogTest
 !see .TestEditorTests.TestfallSuite.RefreshDirtyTestCaseTest
 !see .TestEditorTests.TeamSvnSuite.ErrorMessageOnCheckoutProjectWithSameName
+!see .TestEditorTests.SzenariosuiteSuite.SzenariosuiteAnlegenFehleingabeTest
