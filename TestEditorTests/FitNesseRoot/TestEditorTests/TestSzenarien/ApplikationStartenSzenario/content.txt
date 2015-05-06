@@ -2,5 +2,5 @@
 |note|Description: Das Szenario startet den lokalen Test-Editor als zu testendes System (AUT). Der Pfad zu der ausführbaren AUT Datei (unter Windows: testeditor.exe), muss unter Einstellungen hinterlegt sein.|
 |note|Description: !!!!!!! Hinweis !!!!!!! Das warten auf 1 Sekunden ist derzeit notwendig, damit eine Suite von Testfällen korrekt ausgeführt werden kann. Das liegt daran, dass die AUT nicht synchron beendet wird und ein folgender Testfall sonst fehlschlägt, da die AUT dann nicht erneut gestartet werden kann. Die 1 Sek. sind also ein Workaround um sicherzustellen, dass die AUT beendet wurde, besser wäre es das Beenden der Applikation im Test-Treiber korrekt abzubilden.|
 |note| Maske: Allgemein|
-|warte|1|Sekunden|
+|warte|3|Sekunden|
 |starte Test-Editor|${PATH_TO_TESTEDITOR_AUT}|
