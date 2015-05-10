@@ -36,3 +36,4 @@
 !see .TestEditorTests.TestfallSuite.RefreshDirtyTestCaseTest
 !see .TestEditorTests.TeamSvnSuite.ErrorMessageOnCheckoutProjectWithSameName
 !see .TestEditorTests.SzenariosuiteSuite.SzenariosuiteAnlegenFehleingabeTest
+!see .TestEditorTests.TestfallSuite.UngespeichertenTestfallAusfuehrenMitArbrechen
