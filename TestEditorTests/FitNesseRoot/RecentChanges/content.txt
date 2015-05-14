@@ -1,3 +1,4 @@
+|TestEditorTests||16:21:54 Mon, May 11, 2015|
 |TestEditorTests.ScenarioLibrary||22:54:40 Wed, Feb 25, 2015|
 |TestEditorTests.TeamSvnSuite.ShareProjectTest||12:27:48 Fri, Feb 20, 2015|
 |TestEditorTests.ProjektSuite.DemoProjekteErzeugenTest||21:38:15 Fr, Okt 17, 2014|
@@ -68,6 +69,5 @@
 |TestEditorTests.ElementListe||15:46:15 Mo, Sep 30, 2013|
 |TestEditorTests.TestSzenarien.BasisTestfallLoeschenSzenario||15:27:01 Mo, Sep 30, 2013|
 |TestEditorTests.TestSzenarien.BasisTestfallAnlegenSzenario||15:25:23 Mo, Sep 30, 2013|
-|TestEditorTests||15:09:57 Mo, Sep 30, 2013|
 |TestEditorTests.EditierenTestfallSuite.AnlegenTestfallTest||15:42:33 Mi, Sep 04, 2013|
 |DemoWebTests.TestSzenarien.LoginValidationSzenario||22:30:27 Mo, Sep 02, 2013|
