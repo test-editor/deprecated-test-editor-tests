@@ -24,7 +24,6 @@
 !see .TestEditorTests.SzenarienSuite.SzenarioMitTestschrittenAnlegenTest
 !see .TestEditorTests.SzenariosuiteSuite.SzenariosuiteAnlegenUndLoeschenTest
 !see .TestEditorTests.ProjektSuite.ProjektTeilenSuite.ProjektTeilenFehleingabeTest
-!see .TestEditorTests.ProjektSuite.DemoProjekteErzeugenSuite.DemoProjekteAlleErzeugenTest
 !see .TestEditorTests.ProjektSuite.DemoProjekteErzeugenSuite.DemoProjekteErzeugenTest
 !see .TestEditorTests.ProjektSuite.DemoProjekteErzeugenSuite.DemoProjekteAusgegrautTest
 !see .TestEditorTests.TeamSvnSuite.ImportProjectTest
