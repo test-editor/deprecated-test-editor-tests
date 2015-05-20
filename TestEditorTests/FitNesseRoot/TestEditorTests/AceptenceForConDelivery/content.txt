@@ -3,7 +3,6 @@
 !see .TestEditorTests.ProjektSuite.ProjektUmbenennenTest
 !see .TestEditorTests.ProjektSuite.ProjektAnlegenFehleingabeTest
 !see .TestEditorTests.ProjektSuite.ProjektAnlegenUndLoeschenTest
-!see .TestEditorTests.ProjektSuite.ProjekteAnlegenUndLoeschenTest
 !see .TestEditorTests.TestsuiteSuite.SuiteAnlegenFehleingabeTest
 !see .TestEditorTests.TestsuiteSuite.SuiteAnlegenUndLoeschenTest
 !see .TestEditorTests.TestsuiteSuite.SuiteMitRefTestfaellenAnlegenTest
