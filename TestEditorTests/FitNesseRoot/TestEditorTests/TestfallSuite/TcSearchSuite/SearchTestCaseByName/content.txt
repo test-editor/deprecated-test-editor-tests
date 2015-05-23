@@ -1,0 +1,36 @@
+Tests the shortcut to open the test search dialog. in the search dialog a search is performed and the result count. After that the view is closed and a new search with openeing a testcase is performed. The open state is tested with a check of the sourcecode.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: Allgemein
+-!|script|
+|sende kombiniertes Tastaturkommando|swt.ctrl|und|f|
+|warte|1|Sekunden|
+# Maske: Dialog: Testfall Suche
+-!|script|
+|prüfe ob in der Liste|dialog.search.teststructure.resulttable|die Elementanzahl|30|ist|
+|gebe in das Feld|dialog.search.teststructure.teststructurename|den Wert|login|ein|
+|prüfe ob in der Liste|dialog.search.teststructure.resulttable|die Elementanzahl|14|ist|
+|klicke auf|dialog.common.cancel|
+# Maske: Allgemein
+-!|script|
+|sende kombiniertes Tastaturkommando|swt.ctrl|und|f|
+|warte|1|Sekunden|
+# Maske: Dialog: Testfall Suche
+-!|script|
+|gebe in das Feld|dialog.search.teststructure.teststructurename|den Wert|loginvalid|ein|
+|prüfe ob in der Liste|dialog.search.teststructure.resulttable|die Elementanzahl|5|ist|
+|selektiere Index|1|
+|klicke auf|dialog.common.okButton|
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.openSource|aus|
+# Maske: Dialog: Quellcode
+-!|script|
+|prüfe ob im Textblock|infodialog.text|der Text|LoginValid|vorhanden ist|
+|klicke auf|dialog.sourceCode.okButton|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

@@ -3,9 +3,9 @@
 <ActionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="../../../org.testeditor.xmllibrary/resources/AllActionGroups.xsd"
 	schemaVersion="1.1">
-    
-    <!-- Allgemein -->
-    
+
+	<!-- Allgemein -->
+
 	<ActionGroup name="Allgemein">
 		<action technicalBindingType="Starte_Test_Editor" />
 		<action technicalBindingType="Beende_Test_Editor" />
@@ -13,16 +13,22 @@
 		<action technicalBindingType="Alle_Widgets_suchen" />
 		<action technicalBindingType="Reiter_Schließen" />
 		<action technicalBindingType="Prüfe_Test_Server" />
-		<action technicalBindingType="Überprüfe_Text_auf_Seite"/>
-		<action technicalBindingType="lese_den_Pfad_Arbeitsbereich"/>
-		<action technicalBindingType="pruefe_wert_proprty_datei"/>
+		<action technicalBindingType="Überprüfe_Text_auf_Seite" />
+		<action technicalBindingType="lese_den_Pfad_Arbeitsbereich" />
+		<action technicalBindingType="pruefe_wert_proprty_datei" />
 		<action technicalBindingType="Prüfe_in_Test_Text_in_Zeile_vorhanden" />
 		<action technicalBindingType="Prüfe_in_Test_Text_in_Zeile_nicht_vorhanden" />
+		<action technicalBindingType="Kombiniertes_Tastaturkommando_Senden">
+			<actionName locator="swt.ctrl">Steuerung</actionName>
+			<argument id="argument1">
+				<value>F</value>
+			</argument>
+		</action>
 	</ActionGroup>
 
-    <!-- Menü -->
+	<!-- Menü -->
 
-    <ActionGroup name="Allgemein: Menü">
+	<ActionGroup name="Allgemein: Menü">
 		<action technicalBindingType="Menüeintrag_Auswählen">
 			<actionName locator="common.menu.file">Datei</actionName>
 		</action>
@@ -39,19 +45,19 @@
 			<actionName locator="menu.new.team.import">Projekt Laden</actionName>
 		</action>
 	</ActionGroup>
-    
-    <ActionGroup name="Allgemein: Menü->Datei">
+
+	<ActionGroup name="Allgemein: Menü->Datei">
 		<action technicalBindingType="Menüeintrag_Auswählen">
 			<actionName locator="menu.new.demo.projects">Demo-Projekte erzeugen</actionName>
 		</action>
 	</ActionGroup>
-    
-    <!-- Views -->
-    
-    <ActionGroup name="View: Auto Complete View">
+
+	<!-- Views -->
+
+	<ActionGroup name="View: Auto Complete View">
 		<action technicalBindingType="AutoCompletion_Selektieren" />
-    </ActionGroup>
-    
+	</ActionGroup>
+
 	<ActionGroup name="View: Test-Explorer">
 		<action technicalBindingType="Element_Navigieren" />
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
@@ -80,7 +86,7 @@
 		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
 			<actionName locator="view.testExplorer.rename">Eintrag umbenennen</actionName>
-		 </action>
+		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
 			<actionName locator="view.testExplorer.runTest">Test ausführen</actionName>
 		</action>
@@ -103,14 +109,14 @@
 			<actionName locator="view.testExplorer.showTestLog">Testlog anzeigen</actionName>
 		</action>
 		<action technicalBindingType="Alle_Projekte_löschen">
-		 </action>
+		</action>
 		<action technicalBindingType="Prüfe_Anzahl_der_Projekte">
-		 </action>
+		</action>
 		<action technicalBindingType="Prüfe_Anzahl_Kindelemente">
-		 </action>
+		</action>
 	</ActionGroup>
-    
-    <ActionGroup name="View: Projekt">
+
+	<ActionGroup name="View: Projekt">
 		<action technicalBindingType="Eingabe_Wert">
 			<actionName locator="view.editProject.port">Port</actionName>
 		</action>
@@ -124,8 +130,8 @@
 			<actionName locator="view.editProject.browser">Browser</actionName>
 		</action>
 	</ActionGroup>
-    
-    <ActionGroup name="View: Testsuite">
+
+	<ActionGroup name="View: Testsuite">
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="ID::add.referred.testcase">Hinzufügen</actionName>
 		</action>
@@ -134,61 +140,61 @@
 		</action>
 		<action technicalBindingType="Index_Selektieren" />
 	</ActionGroup>
-    
-   <ActionGroup name="View: Testfall">
-       <action technicalBindingType="Zeile_Markieren" >
-          <actionName locator="view.text">Testfall</actionName>
-       </action>    
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="view.editTestcase.cut">Ausschneiden</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="view.editTestcase.copy">Kopieren</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="view.editTestcase.past">Einfügen</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="view.editTestcase.deleteButton">Löschen</actionName>
-       </action> 
-       <action technicalBindingType="Tastaturkommando_Senden_an_Testfall">
-           <actionName locator="view.editTestcase.delete">Löschen</actionName>
-       </action> 
-       <action technicalBindingType="Tastaturkommando_Senden_an_Testfall">
-           <actionName locator="view.editTestcase.pupup.edit">Eingebettet bearbeiten</actionName>
-       </action> 
-       <action technicalBindingType="Tastaturkommando_Senden_an_Beschreibung">
-           <actionName locator="view.editTestcase.pupup.esc">Dialog schließen</actionName>
-       </action> 
-       <action technicalBindingType="Kombiniertes_Tastaturkommando_Senden_an_Testfall">
-           <actionName locator="swt.ctrl">Steuerung</actionName>
-            <argument id="argument1">
-                <value>c</value>
-                <value>v</value>
-                <value>x</value>
-            </argument>
-       </action> 
-   </ActionGroup>
 
-    <ActionGroup name="View: Testhistorie">
-        <action technicalBindingType="Prüfe_Wert_in_Beschriftung">
-            <actionName locator="view.testHistory.label">Label</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Wert_in_Feld_nicht_vorhanden">
-            <actionName locator="view.testHistory.label">Label</actionName>
-        </action>
-    </ActionGroup>
+	<ActionGroup name="View: Testfall">
+		<action technicalBindingType="Zeile_Markieren">
+			<actionName locator="view.text">Testfall</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="view.editTestcase.cut">Ausschneiden</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="view.editTestcase.copy">Kopieren</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="view.editTestcase.past">Einfügen</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="view.editTestcase.deleteButton">Löschen</actionName>
+		</action>
+		<action technicalBindingType="Tastaturkommando_Senden_an_Testfall">
+			<actionName locator="view.editTestcase.delete">Löschen</actionName>
+		</action>
+		<action technicalBindingType="Tastaturkommando_Senden_an_Testfall">
+			<actionName locator="view.editTestcase.pupup.edit">Eingebettet bearbeiten</actionName>
+		</action>
+		<action technicalBindingType="Tastaturkommando_Senden_an_Beschreibung">
+			<actionName locator="view.editTestcase.pupup.esc">Dialog schließen</actionName>
+		</action>
+		<action technicalBindingType="Kombiniertes_Tastaturkommando_Senden_an_Testfall">
+			<actionName locator="swt.ctrl">Steuerung</actionName>
+			<argument id="argument1">
+				<value>c</value>
+				<value>v</value>
+				<value>x</value>
+			</argument>
+		</action>
+	</ActionGroup>
 
-    <ActionGroup name="View: Testlog">
-        <action technicalBindingType="Prüfe_Wert_in_Beschriftung">
-            <actionName locator="view.testHistory.label">Label</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Wert_in_Feld_nicht_vorhanden">
-            <actionName locator="view.testHistory.label">Label</actionName>
-        </action>
-    </ActionGroup>
+	<ActionGroup name="View: Testhistorie">
+		<action technicalBindingType="Prüfe_Wert_in_Beschriftung">
+			<actionName locator="view.testHistory.label">Label</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Wert_in_Feld_nicht_vorhanden">
+			<actionName locator="view.testHistory.label">Label</actionName>
+		</action>
+	</ActionGroup>
 
-    <ActionGroup name="View: Beschreibung">
+	<ActionGroup name="View: Testlog">
+		<action technicalBindingType="Prüfe_Wert_in_Beschriftung">
+			<actionName locator="view.testHistory.label">Label</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Wert_in_Feld_nicht_vorhanden">
+			<actionName locator="view.testHistory.label">Label</actionName>
+		</action>
+	</ActionGroup>
+
+	<ActionGroup name="View: Beschreibung">
 		<action technicalBindingType="Eingabe_Wert">
 			<actionName locator="view.description.descriptionText">Beschreibung</actionName>
 		</action>
@@ -196,70 +202,70 @@
 			<actionName locator="view.description.addButton">Hinzufügen</actionName>
 		</action>
 	</ActionGroup>
- 
-    <ActionGroup name="View: Testschritt">
-        <action technicalBindingType="Auswahl_Wert">
-           <actionName locator="view.teststep.maskChoice">Maske</actionName>
-           <argument id="argument1">
-              <value>Allgemein Browser</value>
-              <value>Lokale Anmeldung</value>
-           </argument>
-        </action>
-        <action technicalBindingType="Auswahl_Wert">
-            <actionName locator="view.teststep.stepChoice">Schritt</actionName>
-            <argument id="argument1">
-                <value>Browser beenden</value>
-                <value>Seite navigieren</value>
-                <value>Text ungültig prüfen</value>
-                <value>Text prüfen</value>
-                <value>Browser starten</value>
-                <value>Sekunden warten</value>
-                <value>Button betätigen</value>
-                <value>Wert auswaehlen</value>
-                <value>Wert eingeben</value>
-                <value>Wert leeren</value>
-                <value>Wert leeren</value>
-            </argument>
-        </action>
-        <action technicalBindingType="Auswahl_Wert">
-            <actionName locator="view.teststep.valueChoiceField">Feld</actionName>
-            <argument id="argument1">
-                <value>Name</value>
-                <value>Passwort</value>
-            </argument>
-        </action>
-        <action technicalBindingType="Auswahl_Wert">
-            <actionName locator="view.teststep.valueChoiceBrowser">Browser</actionName>
-            <argument id="argument1">
-                <value>Firefox</value>
-                <value>IE</value>
-            </argument>
-        </action>
-        <action technicalBindingType="Eingabe_Wert">
-            <actionName locator="view.teststep.urlText">URL</actionName>
-        </action>
-        <action technicalBindingType="Eingabe_Wert">
-            <actionName locator="view.teststep.valueText">Wert</actionName>
-        </action>
-        <action technicalBindingType="Eingabe_Wert">
-            <actionName locator="view.teststep.maskChoice">Mask</actionName>
-        </action>
-        <action technicalBindingType="Eingabe_Wert">
-            <actionName locator="view.teststep.stepChoice">Schritt</actionName>
-        </action>
-        <action technicalBindingType="Button_Drücken">
-            <actionName locator="view.teststep.addButton">Hinzufügen</actionName>
-        </action>
-    </ActionGroup>
+
+	<ActionGroup name="View: Testschritt">
+		<action technicalBindingType="Auswahl_Wert">
+			<actionName locator="view.teststep.maskChoice">Maske</actionName>
+			<argument id="argument1">
+				<value>Allgemein Browser</value>
+				<value>Lokale Anmeldung</value>
+			</argument>
+		</action>
+		<action technicalBindingType="Auswahl_Wert">
+			<actionName locator="view.teststep.stepChoice">Schritt</actionName>
+			<argument id="argument1">
+				<value>Browser beenden</value>
+				<value>Seite navigieren</value>
+				<value>Text ungültig prüfen</value>
+				<value>Text prüfen</value>
+				<value>Browser starten</value>
+				<value>Sekunden warten</value>
+				<value>Button betätigen</value>
+				<value>Wert auswaehlen</value>
+				<value>Wert eingeben</value>
+				<value>Wert leeren</value>
+				<value>Wert leeren</value>
+			</argument>
+		</action>
+		<action technicalBindingType="Auswahl_Wert">
+			<actionName locator="view.teststep.valueChoiceField">Feld</actionName>
+			<argument id="argument1">
+				<value>Name</value>
+				<value>Passwort</value>
+			</argument>
+		</action>
+		<action technicalBindingType="Auswahl_Wert">
+			<actionName locator="view.teststep.valueChoiceBrowser">Browser</actionName>
+			<argument id="argument1">
+				<value>Firefox</value>
+				<value>IE</value>
+			</argument>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="view.teststep.urlText">URL</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="view.teststep.valueText">Wert</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="view.teststep.maskChoice">Mask</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="view.teststep.stepChoice">Schritt</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="view.teststep.addButton">Hinzufügen</actionName>
+		</action>
+	</ActionGroup>
 
 	<ActionGroup name="View: Szenario">
 		<action technicalBindingType="Element_Navigieren" />
 		<action technicalBindingType="Auswahl_Wert">
 			<actionName locator="chose.scenario">Szenario</actionName>
 			<argument id="argument1">
-            		    	<value>MyDemoScenario</value>
-                		<value>Login Validation Szenario</value>
-            		</argument>
+				<value>MyDemoScenario</value>
+				<value>Login Validation Szenario</value>
+			</argument>
 		</action>
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="ID::add.new.scenario">Hinzufügen</actionName>
@@ -267,147 +273,147 @@
 		<action technicalBindingType="Element_Navigieren_im_Tree">
 			<actionName locator="chose.scenario">Szenario Auswahlbaum</actionName>
 			<argument id="argument1">
-            		    	<value>Szenario Auswahlbaum</value>
-            		</argument>
+				<value>Szenario Auswahlbaum</value>
+			</argument>
 		</action>
 		<action technicalBindingType="Prüfe_Anzahl_Kindelemente_von_Tree">
 			<actionName locator="chose.scenario">Szenario Auswahlbaum</actionName>
 			<argument id="argument1">
-            		    	<value>Szenario Auswahlbaum</value>
-            		</argument>
+				<value>Szenario Auswahlbaum</value>
+			</argument>
 		</action>
 	</ActionGroup>
-   
-   <!-- Wizards -->
-   
-   <ActionGroup name="Wizard: Neues Projekt">
-       <action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.newTestcase.nameText">Name</actionName>
-       </action>
-       <action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.newTestProject.portText">Port</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="wizard.newTestproject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="wizard.newTestproject.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_deaktiviert">
-           <actionName locator="wizard.newTestproject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_deaktiviert">
-           <actionName locator="wizard.newTestproject.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_aktiviert">
-           <actionName locator="wizard.newTestproject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_aktiviert">
-           <actionName locator="wizard.newTestproject.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Wert_in_Beschriftung">
-           <actionName locator="wizard.newTestProject.errorMessage">Fehlermeldung</actionName>
-       </action>
-   </ActionGroup>
-   
-   <ActionGroup name="Wizard: Neue Testsuite">
-       <action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.newTestsuite.nameText">Name</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="wizard.newTestsuite.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="wizard.newTestsuite.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_deaktiviert">
-           <actionName locator="wizard.newTestsuite.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_deaktiviert">
-           <actionName locator="wizard.newTestsuite.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_aktiviert">
-           <actionName locator="wizard.newTestsuite.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_aktiviert">
-           <actionName locator="wizard.newTestsuite.cancelButton">Abbrechen</actionName>
-       </action>
-   </ActionGroup>
-   
-   <ActionGroup name="Wizard: Neuer Testfall">
+
+	<!-- Wizards -->
+
+	<ActionGroup name="Wizard: Neues Projekt">
 		<action technicalBindingType="Eingabe_Wert">
 			<actionName locator="wizard.newTestcase.nameText">Name</actionName>
 		</action>
-        <action technicalBindingType="Button_Drücken">
-            <actionName locator="wizard.newTestcase.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Button_Drücken">
-            <actionName locator="wizard.newTestcase.cancelButton">Abbrechen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_deaktiviert">
-            <actionName locator="wizard.newTestcase.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_deaktiviert">
-            <actionName locator="wizard.newTestcase.cancelButton">Abbrechen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_aktiviert">
-            <actionName locator="wizard.newTestcase.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_aktiviert">
-            <actionName locator="wizard.newTestcase.cancelButton">Abbrechen</actionName>
-        </action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.newTestProject.portText">Port</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newTestproject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newTestproject.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newTestproject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newTestproject.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newTestproject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newTestproject.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Wert_in_Beschriftung">
+			<actionName locator="wizard.newTestProject.errorMessage">Fehlermeldung</actionName>
+		</action>
 	</ActionGroup>
 
-   <ActionGroup name="Wizard: Neue Szenariosuite">
+	<ActionGroup name="Wizard: Neue Testsuite">
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.newTestsuite.nameText">Name</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newTestsuite.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newTestsuite.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newTestsuite.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newTestsuite.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newTestsuite.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newTestsuite.cancelButton">Abbrechen</actionName>
+		</action>
+	</ActionGroup>
+
+	<ActionGroup name="Wizard: Neuer Testfall">
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.newTestcase.nameText">Name</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newTestcase.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newTestcase.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newTestcase.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newTestcase.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newTestcase.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newTestcase.cancelButton">Abbrechen</actionName>
+		</action>
+	</ActionGroup>
+
+	<ActionGroup name="Wizard: Neue Szenariosuite">
 		<action technicalBindingType="Eingabe_Wert">
 			<actionName locator="wizard.newSzenariosuite.nameText">Name</actionName>
 		</action>
-        <action technicalBindingType="Button_Drücken">
-            <actionName locator="wizard.newSzenariosuite.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Button_Drücken">
-            <actionName locator="wizard.newSzenariosuite.cancelButton">Abbrechen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_deaktiviert">
-            <actionName locator="wizard.newSzenariosuite.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_deaktiviert">
-            <actionName locator="wizard.newSzenariosuite.cancelButton">Abbrechen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_aktiviert">
-            <actionName locator="wizard.newSzenariosuite.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_aktiviert">
-            <actionName locator="wizard.newSzenariosuite.cancelButton">Abbrechen</actionName>
-        </action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newSzenariosuite.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newSzenariosuite.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newSzenariosuite.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newSzenariosuite.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newSzenariosuite.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newSzenariosuite.cancelButton">Abbrechen</actionName>
+		</action>
 	</ActionGroup>
 
-    
-    <ActionGroup name="Wizard: Neues Szenario">
+
+	<ActionGroup name="Wizard: Neues Szenario">
 		<action technicalBindingType="Eingabe_Wert">
 			<actionName locator="wizard.newTestscenario.nameText">Name</actionName>
 		</action>
-        <action technicalBindingType="Button_Drücken">
-            <actionName locator="wizard.newTestscenario.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Button_Drücken">
-            <actionName locator="wizard.newTestscenario.cancelButton">Abbrechen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_deaktiviert">
-            <actionName locator="wizard.newTestscenario.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_deaktiviert">
-            <actionName locator="wizard.newTestscenario.cancelButton">Abbrechen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_aktiviert">
-            <actionName locator="wizard.newTestcase.finishButton">Fertigstellen</actionName>
-        </action>
-        <action technicalBindingType="Prüfe_Button_aktiviert">
-            <actionName locator="wizard.newTestscenario.cancelButton">Abbrechen</actionName>
-        </action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newTestscenario.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.newTestscenario.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newTestscenario.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.newTestscenario.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newTestcase.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.newTestscenario.cancelButton">Abbrechen</actionName>
+		</action>
 	</ActionGroup>
-    
-    <ActionGroup name="Wizard: Umbenennen">
+
+	<ActionGroup name="Wizard: Umbenennen">
 		<action technicalBindingType="Eingabe_Wert">
 			<actionName locator="wizard.rename.nameText">Name</actionName>
 		</action>
@@ -429,78 +435,76 @@
 		<action technicalBindingType="Prüfe_Button_aktiviert">
 			<actionName locator="wizard.rename.cancelButton">Abbrechen</actionName>
 		</action>
-        <!--
-        <action technicalBindingType="Prüfe_Wert_in_Beschriftung">
-            <actionName locator="wizard.rename.errorMessage">Fehlermeldung</actionName>
-        </action>-->
-	</ActionGroup>
-    
-    <ActionGroup name="Wizard: Projekt teilen">
-    	<action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.shareProject.urlText">URL</actionName>
-       </action>
-       <action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.shareProject.nameText">Name</actionName>
-       </action>
-       <action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.shareProject.PasswordText">Passwort</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_deaktiviert">
-           <actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_deaktiviert">
-           <actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_aktiviert">
-           <actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_aktiviert">
-           <actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
-       </action>
+		<!-- <action technicalBindingType="Prüfe_Wert_in_Beschriftung"> <actionName 
+			locator="wizard.rename.errorMessage">Fehlermeldung</actionName> </action> -->
 	</ActionGroup>
 
-    <ActionGroup name="Wizard: Projekt importieren">
-    	<action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.shareProject.urlText">URL</actionName>
-       </action>
-    	<action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.shareProject.projectname">Project Name</actionName>
-       </action>
-       <action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.shareProject.nameText">Benutzername</actionName>
-       </action>
-       <action technicalBindingType="Eingabe_Wert">
-           <actionName locator="wizard.shareProject.PasswordText">Passwort</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Button_Drücken">
-           <actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_deaktiviert">
-           <actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_deaktiviert">
-           <actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_aktiviert">
-           <actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
-       </action>
-       <action technicalBindingType="Prüfe_Button_aktiviert">
-           <actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
-       </action>
+	<ActionGroup name="Wizard: Projekt teilen">
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.shareProject.urlText">URL</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.shareProject.nameText">Name</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.shareProject.PasswordText">Passwort</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
+		</action>
 	</ActionGroup>
 
-   
+	<ActionGroup name="Wizard: Projekt importieren">
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.shareProject.urlText">URL</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.shareProject.projectname">Project Name</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.shareProject.nameText">Benutzername</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="wizard.shareProject.PasswordText">Passwort</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.shareProject.finishButton">Fertigstellen</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="wizard.shareProject.cancelButton">Abbrechen</actionName>
+		</action>
+	</ActionGroup>
+
+
 	<ActionGroup name="Wizard: Demoprojekte erzeugen">
-	  	<action technicalBindingType="Checkbox_Drücken">
+		<action technicalBindingType="Checkbox_Drücken">
 			<actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
 		</action>
 		<action technicalBindingType="Checkbox_Drücken">
@@ -508,36 +512,36 @@
 		</action>
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="wizard.demoProjects.finishButton">Fertigstellen</actionName>
-       </action> 
-	   <action technicalBindingType="Prüfe_Checkbox_aktiviert">
-           <actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
-       </action>
-	   <action technicalBindingType="Prüfe_Checkbox_deaktiviert">
-           <actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
-       </action>	
-	   <action technicalBindingType="Prüfe_Checkbox_selektiert">
-           <actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
-       </action>
-	   <action technicalBindingType="Prüfe_Checkbox_deselektiert">
-           <actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
-       </action>   
-	   <action technicalBindingType="Prüfe_Checkbox_aktiviert">
-           <actionName locator="wizard.demoProjects.demo.swing.tests">DemoSwingTests</actionName>
-       </action>
-	   <action technicalBindingType="Prüfe_Checkbox_deaktiviert">
-           <actionName locator="wizard.demoProjects.demo.swing.tests">DemoSwingTests</actionName>
-       </action>	
-	   <action technicalBindingType="Prüfe_Checkbox_selektiert">
-           <actionName locator="wizard.demoProjects.demo.swing.tests">DemoSwingTests</actionName>
-       </action>
-	   <action technicalBindingType="Prüfe_Checkbox_deselektiert">
-           <actionName locator="wizard.demoProjects.demo.swing.tests">DemoSwingTests</actionName>
-       </action>   	   
-	   <action technicalBindingType="Checkbox_Drücken_Label" />   	
+		</action>
+		<action technicalBindingType="Prüfe_Checkbox_aktiviert">
+			<actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Checkbox_deaktiviert">
+			<actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Checkbox_selektiert">
+			<actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Checkbox_deselektiert">
+			<actionName locator="wizard.demoProjects.demo.web.tests">DemoWebTests</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Checkbox_aktiviert">
+			<actionName locator="wizard.demoProjects.demo.swing.tests">DemoSwingTests</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Checkbox_deaktiviert">
+			<actionName locator="wizard.demoProjects.demo.swing.tests">DemoSwingTests</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Checkbox_selektiert">
+			<actionName locator="wizard.demoProjects.demo.swing.tests">DemoSwingTests</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Checkbox_deselektiert">
+			<actionName locator="wizard.demoProjects.demo.swing.tests">DemoSwingTests</actionName>
+		</action>
+		<action technicalBindingType="Checkbox_Drücken_Label" />
 	</ActionGroup>
-    
-   <!-- Dialoge -->
- 	<ActionGroup name="Dialog: Allgemein">
+
+	<!-- Dialoge -->
+	<ActionGroup name="Dialog: Allgemein">
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="dialog.common.okButton">Ok</actionName>
 		</action>
@@ -552,18 +556,18 @@
 		</action>
 	</ActionGroup>
 
- 	<ActionGroup name="Dialog: Test ausführen">
+	<ActionGroup name="Dialog: Test ausführen">
 		<action technicalBindingType="Button_betaetigen_wenn_aktivitiert">
 			<actionName locator="dialog.common.close">Schließen</actionName>
 		</action>
 	</ActionGroup>
 
- 	<ActionGroup name="Dialog: Löschen">
+	<ActionGroup name="Dialog: Löschen">
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="dialog.delete.okButton">Ok</actionName>
 		</action>
 	</ActionGroup>
-	
+
 	<ActionGroup name="Dialog: Error">
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="dialog.error.okButton">Ok</actionName>
@@ -574,26 +578,42 @@
 			<actionName locator="dialog.revert.finishButton">Fertigstellen</actionName>
 		</action>
 	</ActionGroup>
-    
-    <ActionGroup name="Dialog: Quellcode">
-        <action technicalBindingType="Button_Drücken">
+
+	<ActionGroup name="Dialog: Quellcode">
+		<action technicalBindingType="Button_Drücken">
 			<actionName locator="dialog.sourceCode.okButton">Ok</actionName>
 		</action>
 		<action technicalBindingType="Prüfe_Wert_in_Textblock_vorhanden">
-            <actionName locator="infodialog.text">Quelltext</actionName>
+			<actionName locator="infodialog.text">Quelltext</actionName>
 		</action>
 		<action technicalBindingType="Prüfe_Wert_in_Textblock_nicht_vorhanden">
-            <actionName locator="infodialog.text">Quelltext</actionName>
+			<actionName locator="infodialog.text">Quelltext</actionName>
 		</action>
 	</ActionGroup>
-    
-    <ActionGroup name="Dialog: Testfall Auswahl">
+
+	<ActionGroup name="Dialog: Testfall Auswahl">
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="ID::dialog.referred.testcase.ok">Ok</actionName>
 		</action>
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="ID::dialog.referred.testcase.cancel">Abbrechen</actionName>
 		</action>
+	</ActionGroup>
+
+	<ActionGroup name="Dialog: Testfall Suche">
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="dialog.common.okButton">Ok</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="dialog.common.cancel">Abbrechen</actionName>
+		</action>
+		<action technicalBindingType="Eingabe_Wert">
+			<actionName locator="dialog.search.teststructure.teststructurename">Testfallname</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Anzahl_Elemente_In_Liste">
+			<actionName locator="dialog.search.teststructure.resulttable">Testfallname</actionName>
+		</action>
+		<action technicalBindingType="Index_Selektieren" />
 	</ActionGroup>
 
 </ActionGroups>

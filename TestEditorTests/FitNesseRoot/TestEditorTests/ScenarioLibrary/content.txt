@@ -150,6 +150,10 @@
 !|scenario|sende kombiniertes Tastaturkommando|guimodifier|und|guiid|an die Testfallansicht|
 |pressShortcutWithModificationKeyOfStyledText;|Testfall|@guimodifier|@guiid|
 
+'''Sende das kombinierte Tastaturkommando an Ansicht des Testfalls'''  --------
+!|scenario|sende kombiniertes Tastaturkommando|keymodifier|und|key|
+|pressGlobalShortcut;|@keymodifier|@key|
+
 '''Alle Projekte lesen'''  --------
 !|scenario|alle Projekte lesen|
 |readAllProjectsInTree|
@@ -165,6 +169,9 @@
 '''Zahl der Kinder gegen angenommenden Wert testen'''  --------
 !|scenario|prüfe ob das Element|nodes|genau|expectedCount|Kinder hat|
 |countChildrenEquals;|@nodes|@expectedCount|
+
+!|scenario|prüfe ob  in der Liste|uilist|die Elementanzahl|expectedCount|ist|
+|countItemsEquals;|@uilist|@expectedCount|
 
 '''Zahl der Kinder eines bekannten Trees gegen angenommenden Wert testen'''  --------
 !|scenario|prüfe ob im Auswahlbaum|locator|das Element|nodes|genau|expectedCount|Kinder hat|

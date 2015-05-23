@@ -64,6 +64,13 @@
 		<actionPart position="4" type="ARGUMENT" />
 	    <actionPart position="5" type="TEXT" value="an die Testfallansicht" />
     </TechnicalBindingType>
+
+  	<TechnicalBindingType id="Kombiniertes_Tastaturkommando_Senden" name="Tastaturkommandos senden">
+		<actionPart position="1" type="TEXT" value="sende kombiniertes Tastaturkommando" />
+		<actionPart position="2" type="ACTION_NAME" />
+		<actionPart position="3" type="TEXT" value="und" />
+		<actionPart position="4" type="ARGUMENT" />
+    </TechnicalBindingType>
     
     <TechnicalBindingType id="Alle_Widgets_suchen" name="Widgets protokollieren">
         <actionPart position="1" type="TEXT" value="Alle Widgets suchen und protokollieren" />
@@ -121,6 +128,7 @@
 		<actionPart position="2" type="ARGUMENT" />
 	</TechnicalBindingType>
 
+	<!-- TODO is this type usefull -->
 	<TechnicalBindingType id="Element_Navigieren_im_Tree" name="Element navigieren im Auswahlbaum">
 		<actionPart position="1" type="TEXT" value="navigiere im Auswahlbaum" />
 		<actionPart position="2" type="ACTION_NAME" id="argument1" />
@@ -287,4 +295,13 @@
 		<actionPart position="6" type="ARGUMENT"/>
 		<actionPart position="7" type="TEXT" value="Kinder hat"/>
 	</TechnicalBindingType>
+	
+	<TechnicalBindingType id="Prüfe_Anzahl_Elemente_In_Liste" name="Anzahle Elemente in Liste prüfen">
+		<actionPart position="1" type="TEXT" value="prüfe ob in der Liste" />
+		<actionPart position="2" type="ACTION_NAME" id="argument1" />
+		<actionPart position="3" type="TEXT" value="die Elementanzahl" />
+		<actionPart position="4" type="ARGUMENT"/>
+		<actionPart position="5" type="TEXT" value="ist"/>
+	</TechnicalBindingType>
+	
 </TechnicalBindingTypes>
