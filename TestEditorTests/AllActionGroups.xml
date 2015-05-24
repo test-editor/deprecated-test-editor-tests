@@ -114,6 +114,15 @@
 		</action>
 		<action technicalBindingType="Prüfe_Anzahl_Kindelemente">
 		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="ID::org.testeditor.ui.handledtoolitem.startTest2">Run</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_aktiviert">
+			<actionName locator="ID::org.testeditor.ui.handledtoolitem.startTest2">Run</actionName>
+		</action>
+		<action technicalBindingType="Prüfe_Button_deaktiviert">
+			<actionName locator="ID::org.testeditor.ui.handledtoolitem.startTest2">Run</actionName>
+		</action>
 	</ActionGroup>
 
 	<ActionGroup name="View: Projekt">

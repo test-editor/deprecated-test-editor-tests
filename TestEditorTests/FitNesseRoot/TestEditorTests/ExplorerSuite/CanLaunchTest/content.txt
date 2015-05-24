@@ -1,0 +1,16 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite|
+|prüfe ob der Button|ID::org.testeditor.ui.handledtoolitem.startTest2|aktiviert ist|
+|navigiere zum Element|DemoWebTests|
+|prüfe ob der Button|ID::org.testeditor.ui.handledtoolitem.startTest2|deaktiviert ist|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,SucheSignalIdunaTest|
+|prüfe ob der Button|ID::org.testeditor.ui.handledtoolitem.startTest2|aktiviert ist|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

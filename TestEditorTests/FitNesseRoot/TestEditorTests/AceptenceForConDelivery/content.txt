@@ -36,3 +36,4 @@
 !see .TestEditorTests.TestfallSuite.UngespeichertenTestfallAusfuehrenMitArbrechen
 !see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.EditTestCaseWithPopDialogTest
 !see .TestEditorTests.TestfallSuite.TcSearchSuite.SearchTestCaseByName
+!see .TestEditorTests.ExplorerSuite.CanLaunchTest
