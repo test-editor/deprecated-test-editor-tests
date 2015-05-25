@@ -16,6 +16,7 @@
 		<action technicalBindingType="Überprüfe_Text_auf_Seite" />
 		<action technicalBindingType="lese_den_Pfad_Arbeitsbereich" />
 		<action technicalBindingType="pruefe_wert_proprty_datei" />
+		<action technicalBindingType="erzeuge_testobject_im_filesystem" />
 		<action technicalBindingType="Prüfe_in_Test_Text_in_Zeile_vorhanden" />
 		<action technicalBindingType="Prüfe_in_Test_Text_in_Zeile_nicht_vorhanden" />
 		<action technicalBindingType="Kombiniertes_Tastaturkommando_Senden">
@@ -122,6 +123,9 @@
 		</action>
 		<action technicalBindingType="Prüfe_Button_deaktiviert">
 			<actionName locator="ID::org.testeditor.ui.handledtoolitem.startTest2">Run</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="ID::org.testeditor.ui.testExplorerRefreshHandler">Refresh</actionName>
 		</action>
 	</ActionGroup>
 

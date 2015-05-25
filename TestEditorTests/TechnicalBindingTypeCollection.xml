@@ -303,5 +303,10 @@
 		<actionPart position="4" type="ARGUMENT"/>
 		<actionPart position="5" type="TEXT" value="ist"/>
 	</TechnicalBindingType>
+
+	<TechnicalBindingType id="erzeuge_testobject_im_filesystem" name="Erzeuge Testobjekt im Filesystem">
+		<actionPart position="1" type="TEXT" value="Erzeuge neues testobjekt unbemerkt von der anwendung mit dem vollen Namen:" />
+		<actionPart position="2" type="ARGUMENT" />
+	</TechnicalBindingType>
 	
 </TechnicalBindingTypes>

@@ -1,0 +1,20 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite|
+|prüfe ob das Element|DemoWebTests,GoogleSucheSuite|genau|2|Kinder hat|
+# Maske: Allgemein
+-!|script|
+|Erzeuge neues testobjekt unbemerkt von der anwendung mit dem vollen Namen:|DemoWebTests.GoogleSucheSuite.MyTest|
+# Maske: View: Test-Explorer
+-!|script|
+|prüfe ob das Element|DemoWebTests,GoogleSucheSuite|genau|2|Kinder hat|
+|klicke auf|ID::org.testeditor.ui.testExplorerRefreshHandler|
+|prüfe ob das Element|DemoWebTests,GoogleSucheSuite|genau|3|Kinder hat|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

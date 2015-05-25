@@ -191,6 +191,9 @@
 !|scenario|ist der Wert|wert|am Schlüssel |key| hinterlegt in der datei | datei |
 |checkInProprtyValue;|@datei|@key|@wert|
 
+'''Erzeuge im Hintergund im Dateisystem eine neue TestStructure ''' --------
+!|scenario|Erzeuge neues testobjekt unbemerkt von der anwendung mit dem vollen Namen |destName| 
+|createTestStructureFiles|@destName|
 
 '''Warte auf Button und betätige ihn ''' --------
 !|scenario|Button|locator|betätigen wenn dieser aktiv ist |
