@@ -13,6 +13,11 @@
 -!|script|
 |prüfe ob das Element|DemoWebTests,GoogleSucheSuite|genau|2|Kinder hat|
 |klicke auf|ID::org.testeditor.ui.testExplorerRefreshHandler|
+# Maske: Allgemein
+-!|script|
+|warte|1|Sekunden|
+# Maske: View: Test-Explorer
+-!|script|
 |prüfe ob das Element|DemoWebTests,GoogleSucheSuite|genau|3|Kinder hat|
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|
