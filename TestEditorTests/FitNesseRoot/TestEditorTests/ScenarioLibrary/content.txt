@@ -9,6 +9,10 @@
 
 !1 SWTBot Methoden
 
+'''Pruefe der Anzahl der Zeilen in der Tabelle ''' --------
+!|scenario|überprüfe ob in der Tabelle |tabelle|die Anzahl der Zeilen|anzahlZeilen|ist|
+|checkRowNumberOfTable;|@tabelle|@anzahlZeilen|
+
 '''Wert eingeben''' --------
 !|scenario|gebe in das Feld|guiid|den Wert|text|ein|
 |setTextById;|@guiid|@text|

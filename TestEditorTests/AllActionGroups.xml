@@ -95,6 +95,9 @@
 			<actionName locator="view.testExplorer.showHistory">Testhistorie anzeigen</actionName>
 		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
+			<actionName locator="Testhistorie löschen">Testhistorie löschen</actionName>
+		</action>       
+		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
 			<actionName locator="view.testExplorer.shareProject">Projekt teilen</actionName>
 		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
@@ -196,6 +199,9 @@
 		<action technicalBindingType="Prüfe_Wert_in_Feld_nicht_vorhanden">
 			<actionName locator="view.testHistory.label">Label</actionName>
 		</action>
+		<action technicalBindingType="Prüfe_Anzahl_Zeilen_In_Tabelle">
+			<actionName locator="history.table">Testhistorie</actionName>
+		</action>    
 	</ActionGroup>
 
 	<ActionGroup name="View: Testlog">

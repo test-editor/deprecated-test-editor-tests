@@ -171,6 +171,14 @@
 	</TechnicalBindingType>
     <!-- Prüfung -->
     
+    <TechnicalBindingType id="Prüfe_Anzahl_Zeilen_In_Tabelle" name="Prüfe Anzahl Zeilen in Tabelle">
+       <actionPart position="1" type="TEXT" value="überprüfe ob in der Tabelle" />
+       <actionPart position="2" type="ACTION_NAME" />
+       <actionPart position="3" type="TEXT" value="die Anzahl der Zeilen" />
+       <actionPart position="4" type="ARGUMENT" />
+       <actionPart position="5" type="TEXT" value="ist" />
+    </TechnicalBindingType>    
+    
     <TechnicalBindingType id="Prüfe_Wert_in_Feld_vorhanden" name="Text im Feld prüfen">
        <actionPart position="1" type="TEXT" value="überprüfe ob im Feld" />
        <actionPart position="2" type="ACTION_NAME" />

@@ -38,3 +38,4 @@
 !see .TestEditorTests.TestfallSuite.TcSearchSuite.SearchTestCaseByName
 !see .TestEditorTests.ExplorerSuite.CanLaunchTest
 !see .TestEditorTests.ExplorerSuite.RefreshTestProjects
+!see .TestEditorTests.HistorySuite.DeleteHistoryTest
