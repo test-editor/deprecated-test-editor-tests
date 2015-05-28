@@ -39,3 +39,4 @@
 !see .TestEditorTests.ExplorerSuite.CanLaunchTest
 !see .TestEditorTests.ExplorerSuite.RefreshTestProjects
 !see .TestEditorTests.HistorySuite.DeleteHistoryTest
+!see .TestEditorTests.TeamSvnSuite.RevertChangesTest
