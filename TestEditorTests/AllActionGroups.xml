@@ -145,6 +145,9 @@
 		<action technicalBindingType="Prüfe_Wert_in_Feld_vorhanden">
 			<actionName locator="view.editProject.browser">Browser</actionName>
 		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="view.editProject.reloadLibraryButtonID">Bibliothek neu laden</actionName>
+		</action>
 	</ActionGroup>
 
 	<ActionGroup name="View: Testsuite">
@@ -275,6 +278,12 @@
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="view.teststep.addButton">Hinzufügen</actionName>
 		</action>
+        <action technicalBindingType="Prüfe_Wert_In_DropDownBox">
+            <actionName locator="chose.maske">Maske</actionName>
+        </action>
+        <action technicalBindingType="Prüfe_Wert_In_DropDownBox">
+            <actionName locator="chose.action">Schritt</actionName>
+        </action>
 	</ActionGroup>
 
 	<ActionGroup name="View: Szenario">
@@ -633,6 +642,12 @@
 			<actionName locator="dialog.search.teststructure.resulttable">Testfallname</actionName>
 		</action>
 		<action technicalBindingType="Index_Selektieren" />
+	</ActionGroup>
+
+  <ActionGroup name="Workspace">
+		<action technicalBindingType="Kopieren"/>
+		<action technicalBindingType="Loeschen"/>
+		<action technicalBindingType="DateiSchreiben"/>
 	</ActionGroup>
 
 </ActionGroups>
