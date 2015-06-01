@@ -40,3 +40,4 @@
 !see .TestEditorTests.ExplorerSuite.RefreshTestProjects
 !see .TestEditorTests.HistorySuite.DeleteHistoryTest
 !see .TestEditorTests.TeamSvnSuite.RevertChangesTest
+!see .TestEditorTests.ProjektSuite.ReloadLibrary
