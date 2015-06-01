@@ -1,0 +1,37 @@
+This test cases checks, whether the reload library button in the project settings page (Right  Click on any project node in the main tree) works ok.
+The tests makes a temporary change to the action group configuration, i.e. creates a new dummy actiongroup/mask ("NewActionGroup"). It than triggers the reload button and checks afterwards, if the new mask appears in the test step dialog view.
+Finally the action group entry is removed from the configuration.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: Workspace
+-!|script|
+|Kopiere|DemoWebTests/AllActionGroups.xml|nach|DemoWebTests/AllActionGroups_save.xml|
+|Speicher|<?xml version="1.0" encoding="UTF-8"?><ActionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../org.testeditor.xmllibrary/resources/AllActionGroups.xsd" schemaVersion="1.1"><ActionGroup name="TEST"><action technicalBindingType="Warte_Sekunden" /></ActionGroup></ActionGroups>|unter|DemoWebTests/AllActionGroups.xml|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Projekt
+-!|script|
+|klicke auf|view.editProject.reloadLibraryButtonID|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestcase|aus|
+# Maske: Wizard: Neuer Testfall
+-!|script|
+|gebe in das Feld|wizard.newTestcase.nameText|den Wert|ReloadLibraryTescht|ein|
+|klicke auf|wizard.newTestcase.finishButton|
+# Maske: View: Testschritt
+-!|script|
+|prüfe ob die DropDownBox|chose.maske|den Wert|TEST|enthält|
+# Maske: Workspace
+-!|script|
+|Kopiere|DemoWebTests/AllActionGroups_save.xml|nach|DemoWebTests/AllActionGroups.xml|
+|Lösche|DemoWebTests/AllActionGroups_save.xml|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#
