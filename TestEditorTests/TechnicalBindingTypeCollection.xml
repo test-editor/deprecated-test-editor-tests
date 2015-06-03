@@ -317,4 +317,31 @@
 		<actionPart position="2" type="ARGUMENT" />
 	</TechnicalBindingType>
 	
+	<TechnicalBindingType id="Prüfe_Wert_In_DropDownBox" name="Prüfen auf Wert in DropDownBox">
+		<actionPart position="1" type="TEXT" value="prüfe ob die DropDownBox" />
+		<actionPart position="2" type="ACTION_NAME"/>
+		<actionPart position="3" type="TEXT" value="den Wert" />
+		<actionPart position="4" type="ARGUMENT"/>
+		<actionPart position="5" type="TEXT" value="enthält"/>
+	</TechnicalBindingType>
+
+	<TechnicalBindingType id="Kopieren" name="Kopieren In AUT Workspace">
+		<actionPart position="1" type="TEXT" value="Kopiere" />
+		<actionPart position="2" type="ARGUMENT" />
+		<actionPart position="3" type="TEXT" value="nach" />
+		<actionPart position="4" type="ARGUMENT" />
+	</TechnicalBindingType>
+
+	<TechnicalBindingType id="Loeschen" name="Löschen In AUT Workspace">
+		<actionPart position="1" type="TEXT" value="Lösche" />
+		<actionPart position="2" type="ARGUMENT" />
+	</TechnicalBindingType>
+
+	<TechnicalBindingType id="DateiSchreiben" name="Text als Datei in AUT Workspace speichern">
+		<actionPart position="1" type="TEXT" value="Speicher" />
+		<actionPart position="2" type="ARGUMENT" />
+		<actionPart position="3" type="TEXT" value="unter" />
+		<actionPart position="4" type="ARGUMENT" />
+	</TechnicalBindingType>
+
 </TechnicalBindingTypes>

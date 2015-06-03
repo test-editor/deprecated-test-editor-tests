@@ -80,6 +80,9 @@
 			<actionName locator="view.testExplorer.newScenariosuite">Neue Szenariosuite</actionName>
 		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
+			<actionName locator="view.testExplorer.cloneTestStructure">Klone Test element</actionName>
+		</action>
+		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
 			<actionName locator="view.testExplorer.deleteElement">Eintrag löschen</actionName>
 		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
@@ -144,6 +147,9 @@
 		</action>
 		<action technicalBindingType="Prüfe_Wert_in_Feld_vorhanden">
 			<actionName locator="view.editProject.browser">Browser</actionName>
+		</action>
+		<action technicalBindingType="Button_Drücken">
+			<actionName locator="view.editProject.reloadLibraryButtonID">Bibliothek neu laden</actionName>
 		</action>
 	</ActionGroup>
 
@@ -275,6 +281,12 @@
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="view.teststep.addButton">Hinzufügen</actionName>
 		</action>
+        <action technicalBindingType="Prüfe_Wert_In_DropDownBox">
+            <actionName locator="chose.maske">Maske</actionName>
+        </action>
+        <action technicalBindingType="Prüfe_Wert_In_DropDownBox">
+            <actionName locator="chose.action">Schritt</actionName>
+        </action>
 	</ActionGroup>
 
 	<ActionGroup name="View: Szenario">
@@ -360,6 +372,7 @@
 	</ActionGroup>
 
 	<ActionGroup name="Wizard: Neuer Testfall">
+		<action technicalBindingType="Element_Navigieren" />
 		<action technicalBindingType="Eingabe_Wert">
 			<actionName locator="wizard.newTestcase.nameText">Name</actionName>
 		</action>
@@ -633,6 +646,12 @@
 			<actionName locator="dialog.search.teststructure.resulttable">Testfallname</actionName>
 		</action>
 		<action technicalBindingType="Index_Selektieren" />
+	</ActionGroup>
+
+  <ActionGroup name="Workspace">
+		<action technicalBindingType="Kopieren"/>
+		<action technicalBindingType="Loeschen"/>
+		<action technicalBindingType="DateiSchreiben"/>
 	</ActionGroup>
 
 </ActionGroups>

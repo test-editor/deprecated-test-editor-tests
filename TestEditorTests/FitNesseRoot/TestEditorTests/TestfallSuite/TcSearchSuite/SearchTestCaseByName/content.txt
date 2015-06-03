@@ -9,7 +9,7 @@ Tests the shortcut to open the test search dialog. in the search dialog a search
 |warte|1|Sekunden|
 # Maske: Dialog: Testfall Suche
 -!|script|
-|prüfe ob in der Liste|dialog.search.teststructure.resulttable|die Elementanzahl|30|ist|
+|prüfe ob in der Liste|dialog.search.teststructure.resulttable|die Elementanzahl|29|ist|
 |gebe in das Feld|dialog.search.teststructure.teststructurename|den Wert|login|ein|
 |prüfe ob in der Liste|dialog.search.teststructure.resulttable|die Elementanzahl|14|ist|
 |klicke auf|dialog.common.cancel|

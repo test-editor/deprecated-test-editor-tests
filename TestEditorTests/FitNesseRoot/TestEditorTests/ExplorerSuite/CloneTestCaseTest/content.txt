@@ -1,0 +1,39 @@
+Tests the clone operation on existing testcase. A testcase is selected and with the clone operator a new one with the same content, will be created. After this operation the test verifies that the next new testcase is still an empty one.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,SucheSignalIdunaTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.cloneTestStructure|aus|
+# Maske: Wizard: Neuer Testfall
+-!|script|
+|gebe in das Feld|wizard.newTestcase.nameText|den Wert|SucheSiKlone|ein|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite|
+|klicke auf|wizard.newTestcase.finishButton|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,SucheSiKlone|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.openSource|aus|
+# Maske: Dialog: Quellcode
+-!|script|
+|prüfe ob im Textblock|infodialog.text|der Text|Signal Iduna|vorhanden ist|
+|klicke auf|dialog.sourceCode.okButton|
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|DemoWebTests,GoogleSucheSuite|AnotherSearch|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,AnotherSearch|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.openSource|aus|
+# Maske: Dialog: Quellcode
+-!|script|
+|prüfe ob im Textblock|infodialog.text|der Text|Signal Iduna|nicht vorhanden ist|
+|klicke auf|dialog.sourceCode.okButton|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

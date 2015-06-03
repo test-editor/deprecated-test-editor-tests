@@ -1,0 +1,20 @@
+Tests the revert of changes on a testcase. This is tested on the testcase level and on the suite and project level too.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.TeamScenarien.ImportDemoSharedProjectSzenario
+!|script|
+|Import Demo Shared Project Szenario|
+#
+!include <TestEditorTests.TestSzenarien.TeamScenarien.ChangeAndRevertTc
+!|Change And Revert Tc|
+|TestObjectToChange|TestObjectToRevert|
+|SharedProject,MySuite,SecondTest|SharedProject,MySuite,SecondTest|
+|SharedProject,MySuite,SecondTest|SharedProject,MySuite|
+|SharedProject,MySuite,SecondTest|SharedProject|
+#
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

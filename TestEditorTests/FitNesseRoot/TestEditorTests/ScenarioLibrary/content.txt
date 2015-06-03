@@ -206,3 +206,19 @@
 '''Selektiere Vorschlag in der Autocomplete Liste ''' --------
 !|scenario|selektiere Vorschlag:|item|
 |selectElementInAtuocompleteWidget;|@item|
+
+'''Prüfe auf Wert in DropDown ''' --------
+
+!| scenario | prüfe ob die DropDownBox | box | den wert | wert | enthält |
+| checkValueInDropDownBox; | @box | @wert |
+
+'''Kopiere ''' --------
+
+!| scenario | Kopiere | source | nach | target |
+| copyInWorkspace; | @source | @target |
+
+!| scenario | Lösche | source |
+| deleteInWorkspace; | @source |
+
+!| scenario | Speicher | content | unter | source |
+| createFileInWorkspace; | @source | @content |

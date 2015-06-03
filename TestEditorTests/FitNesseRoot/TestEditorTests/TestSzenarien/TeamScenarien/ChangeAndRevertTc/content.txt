@@ -1,0 +1,28 @@
+!|scenario |ChangeAndRevertTc _|TestObjectToChange, TestObjectToRevert|
+|note|Description: Scenario to change a testcase (sepecified by TestObjectToChange) and revert the changes. The revert point of the change is controlled by the parameter TestObjectToRevert.|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{TestObjectToChange}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+|note| Maske: View: Beschreibung|
+|gebe in das Feld|view.description.descriptionText|den Wert|Dies sind einfache Testschritte|ein|
+|klicke auf|view.description.addButton|
+|note| Maske: Allgemein: Menü|
+|wähle den Menüeintrag|common.menu.save|aus|
+|note| Maske: View: Test-Explorer|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.openSource|aus|
+|note| Maske: Dialog: Quellcode|
+|prüfe ob im Textblock|infodialog.text|der Text|Dies sind einfache Testschritte|vorhanden ist|
+|klicke auf|dialog.sourceCode.okButton|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{TestObjectToRevert}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.revertChanges|aus|
+|note| Maske: Dialog: Revert|
+|klicke auf|dialog.revert.finishButton|
+|note| Maske: Dialog: Allgemein|
+|klicke auf|dialog.common.okButton|
+|note| Maske: View: Test-Explorer|
+|navigiere zum Element|@{TestObjectToChange}|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.openSource|aus|
+|note| Maske: Dialog: Quellcode|
+|prüfe ob im Textblock|infodialog.text|der Text|Dies sind einfache Testschritte|nicht vorhanden ist|
+|klicke auf|dialog.sourceCode.okButton|
