@@ -80,6 +80,9 @@
 			<actionName locator="view.testExplorer.newScenariosuite">Neue Szenariosuite</actionName>
 		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
+			<actionName locator="view.testExplorer.cloneTestStructure">Klone Test element</actionName>
+		</action>
+		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
 			<actionName locator="view.testExplorer.deleteElement">Eintrag löschen</actionName>
 		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
@@ -369,6 +372,7 @@
 	</ActionGroup>
 
 	<ActionGroup name="Wizard: Neuer Testfall">
+		<action technicalBindingType="Element_Navigieren" />
 		<action technicalBindingType="Eingabe_Wert">
 			<actionName locator="wizard.newTestcase.nameText">Name</actionName>
 		</action>
