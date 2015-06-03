@@ -1,0 +1,29 @@
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.showHistory|aus|
+# Maske: View: Testhistorie
+-!|script|
+|überprüfe ob in der Tabelle|history.table|die Anzahl der Zeilen|2|ist|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+|wähle aus dem Kontextmenü den Eintrag|Testhistorie löschen|aus|
+# Maske: Dialog: Allgemein
+-!|script|
+|klicke auf|dialog.common.okButton|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.showHistory|aus|
+# Maske: View: Testhistorie
+-!|script|
+|überprüfe ob in der Tabelle|history.table|die Anzahl der Zeilen|0|ist|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#
