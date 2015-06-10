@@ -3,6 +3,9 @@ Dieser Testfall prüft, ob ein Demo-Projekt nur ein Mal erzeugt werden kann. Daz
 !|script|
 |Applikation Starten Szenario|
 #
+# Maske: Allgemein
+-!|script|
+|warte|5|Sekunden|
 # Maske: View: Test-Explorer
 -!|script|
 |alle Projekte löschen|

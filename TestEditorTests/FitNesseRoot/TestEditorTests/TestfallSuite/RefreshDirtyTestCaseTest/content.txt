@@ -2,6 +2,9 @@
 !|script|
 |Applikation Starten Szenario|
 #
+# Maske: Allgemein
+-!|script|
+|warte|5|Sekunden|
 # Maske: View: Test-Explorer
 -!|script|
 |wähle aus dem Kontextmenü den Eintrag|view.testExplorer.shareProject|aus|
