@@ -85,6 +85,11 @@
 !|scenario|beende !-Test Editor-!|
 |stopApplication|
 
+
+'''!-Test Editor-! beenden''' --------
+!|scenario|Makiere Test-Editor als beended|
+|markApplicationStopped|
+
 '''Sekunden warten''' --------
 !|scenario|warte|anzahlSekunden|Sekunden|
 |waitSeconds|@anzahlSekunden|

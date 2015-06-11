@@ -13,6 +13,7 @@
 		<action technicalBindingType="Alle_Widgets_suchen" />
 		<action technicalBindingType="Reiter_Schließen" />
 		<action technicalBindingType="Prüfe_Test_Server" />
+		<action technicalBindingType="Test_Editor_beended" />
 		<action technicalBindingType="Überprüfe_Text_auf_Seite" />
 		<action technicalBindingType="lese_den_Pfad_Arbeitsbereich" />
 		<action technicalBindingType="pruefe_wert_proprty_datei" />
