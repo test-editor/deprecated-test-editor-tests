@@ -27,4 +27,4 @@ testautomat.serverid=fitnesse_based_1.2
 ####################################################################
 
 teamshare_plugin_id=svn-team-share
-teamshare.svn.url=https://svn.akq-eng.de/repos/TESTEDIT/TestProjekte/trunk/
+teamshare.svn.url=https://github.com/test-editor/test-editor-tests/trunk/
