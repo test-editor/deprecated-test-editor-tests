@@ -1,7 +1,6 @@
+!|scenario |ApplikationStoppenSzenario _||
 |note|Description: Das Szenario stoppt den lokalen Test-Editor als zu testendes System (AUT).|
 |note| Maske: Allgemein: Menü|
 |wähle den Menüeintrag|common.menu.quit|aus|
 |note| Maske: Dialog: Allgemein|
 |klicke auf|dialog.common.okButton|
-|note| Maske: Allgemein|
-|Makiere Test-Editor als beended|
