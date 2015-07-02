@@ -9,6 +9,10 @@
 		<actionPart position="1" type="TEXT" value="starte Test-Editor" />
 		<actionPart position="2" type="ARGUMENT" />
 	</TechnicalBindingType>
+
+	<TechnicalBindingType id="Test_Editor_beended" name="Test-Editor als beended makieren">
+		<actionPart position="1" type="TEXT" value="Makiere Test-Editor als beended" />
+	</TechnicalBindingType>
     
 	<TechnicalBindingType id="Beende_Test_Editor" name="Test-Editor beenden">
 		<actionPart position="1" type="TEXT" value="beende Test-Editor" />

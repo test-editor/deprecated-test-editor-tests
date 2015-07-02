@@ -28,7 +28,7 @@ Tests the shortcut to open the test search dialog. in the search dialog a search
 |wähle aus dem Kontextmenü den Eintrag|view.testExplorer.openSource|aus|
 # Maske: Dialog: Quellcode
 -!|script|
-|prüfe ob im Textblock|infodialog.text|der Text|LoginValid|vorhanden ist|
+|prüfe ob im Textblock|infodialog.text|der Text|Login|vorhanden ist|
 |klicke auf|dialog.sourceCode.okButton|
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|
