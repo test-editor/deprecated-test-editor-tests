@@ -1,5 +1,5 @@
-This test cases checks, whether the reload library button in the project settings page (Right  Click on any project node in the main tree) works ok.
-The tests makes a temporary change to the action group configuration, i.e. creates a new dummy actiongroup/mask ("NewActionGroup"). It than triggers the reload button and checks afterwards, if the new mask appears in the test step dialog view.
+This test cases checks, whether the reload library notification comes if changes exists outside the testeditor.
+The tests makes a temporary change to the action group configuration, i.e. creates a new dummy actiongroup/mask ("NewActionGroup"). It than waits 5 seconds (polling time of file watcher) for message dialog  that informs the user for modification, checks afterwards if the new mask appears in the test step dialog view.
 Finally the action group entry is removed from the configuration.
 !include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
 !|script|
@@ -7,30 +7,25 @@ Finally the action group entry is removed from the configuration.
 #
 # Maske: Workspace
 -!|script|
-|Kopiere|DemoWebTests/AllActionGroups.xml|nach|DemoWebTests/AllActionGroups_save.xml|
-|Speicher|<?xml version="1.0" encoding="UTF-8"?><ActionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../org.testeditor.xmllibrary/resources/AllActionGroups.xsd" schemaVersion="1.1"><ActionGroup name="TEST"><action technicalBindingType="Warte_Sekunden" /></ActionGroup></ActionGroups>|unter|DemoWebTests/AllActionGroups.xml|
-# Maske: View: Test-Explorer
+|Speicher|<?xml version="1.0" encoding="UTF-8"?><ActionGroups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	xsi:noNamespaceSchemaLocation="http://testeditor.org/xsd_schema v_1_1/AllActionGroups.xsd" schemaVersion="1.1"><ActionGroup name="TEST"><action technicalBindingType="Starte_Browser"><actionName locator="Firefox">Firefox</actionName></action></ActionGroup></ActionGroups>|unter|DemoWebTests/AllActionGroups.xml|
+5 seconds for waiting until file watcher sends a notification
+# Maske: Allgemein
 -!|script|
-|navigiere zum Element|DemoWebTests|
-|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
-# Maske: View: Projekt
+|warte|5|Sekunden|
+# Maske: Dialog: Allgemein
 -!|script|
-|klicke auf|view.editProject.reloadLibraryButtonID|
+|klicke auf|dialog.common.okButton|
 # Maske: View: Test-Explorer
 -!|script|
 |navigiere zum Element|DemoWebTests|
 |wähle aus dem Kontextmenü den Eintrag|view.testExplorer.newTestcase|aus|
 # Maske: Wizard: Neuer Testfall
 -!|script|
-|gebe in das Feld|wizard.newTestcase.nameText|den Wert|ReloadLibraryTescht|ein|
+|gebe in das Feld|wizard.newTestcase.nameText|den Wert|ReloadLibraryTest|ein|
 |klicke auf|wizard.newTestcase.finishButton|
 # Maske: View: Testschritt
 -!|script|
 |prüfe ob die DropDownBox|chose.maske|den Wert|TEST|enthält|
-# Maske: Workspace
--!|script|
-|Kopiere|DemoWebTests/AllActionGroups_save.xml|nach|DemoWebTests/AllActionGroups.xml|
-|Lösche|DemoWebTests/AllActionGroups_save.xml|
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|
 |Applikation Stoppen Szenario|
