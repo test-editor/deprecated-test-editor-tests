@@ -1,3 +1,4 @@
+Minimal testcase to test the launch and stop operation of the AUT. This testcase tests primary the configuration of the AUT in the Test-Editor.
 !include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
 !|script|
 |Applikation Starten Szenario|
