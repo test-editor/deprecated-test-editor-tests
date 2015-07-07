@@ -2,9 +2,6 @@
 !|script|
 |Applikation Starten Szenario|
 #
-# Maske: Allgemein
--!|script|
-|warte|5|Sekunden|
 # Maske: View: Test-Explorer
 -!|script|
 |wähle aus dem Kontextmenü den Eintrag|view.testExplorer.shareProject|aus|
@@ -16,9 +13,10 @@
 |url|name|passwort|
 |file://$wsPath/.repo/testrepo/|foo|ba|
 #
-# Maske: Allgemein
+# Maske: Dialog: Allgemein
 -!|script|
-|warte|10|Sekunden|
+|klicke auf|dialog.common.okButton|
+|klicke auf|dialog.common.okButton|
 # Maske: View: Test-Explorer
 -!|script|
 |navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
