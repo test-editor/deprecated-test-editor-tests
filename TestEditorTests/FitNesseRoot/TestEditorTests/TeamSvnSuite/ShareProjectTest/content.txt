@@ -14,6 +14,13 @@ Test to share a Project from the Test-Editor Workspace to the Team Provider SVN.
 |url|name|passwort|
 |file://$wsPath/.repo/testrepo/|foo|ba|
 #
+Der Dialog für das reloaden der Bibliothek kommt an dieser Stelle.
+# Maske: Allgemein
+-!|script|
+|warte|1|Sekunden|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests|
 # Maske: Allgemein
 -!|script|
 |ist der Wert|svn-team-share|am Schlüssel|teamshare_plugin_id|hinterlegt in der datei|$wsPath/DemoWebTests/config.tpr|
