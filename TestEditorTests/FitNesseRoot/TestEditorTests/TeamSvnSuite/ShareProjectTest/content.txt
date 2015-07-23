@@ -15,9 +15,10 @@ Test to share a Project from the Test-Editor Workspace to the Team Provider SVN.
 |file://$wsPath/.repo/testrepo/|foo|ba|
 #
 Der Dialog für das reloaden der Bibliothek kommt an dieser Stelle.
-# Maske: Allgemein
+# Maske: Dialog: Allgemein
 -!|script|
-|warte|1|Sekunden|
+|klicke auf|dialog.common.okButton|
+|klicke auf|dialog.common.okButton|
 # Maske: View: Test-Explorer
 -!|script|
 |navigiere zum Element|DemoWebTests|
