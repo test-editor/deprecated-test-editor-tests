@@ -4,11 +4,10 @@ Dieser Testfall überprüft die Fehlermeldungen, die erscheinen wenn beim Umbene
 |Applikation Starten Szenario|
 #
 !include <TestEditorTests.TestSzenarien.TestExplorerSzenarien.UmbenennenFehleingabeSzenario
-!|UmbenennenFehleingabeSzenario|
+!|Umbenennen Fehleingabe Szenario|
 |Pfad|NeuerName|Fehlermeldung|
 |DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|TestSzenarien|TestSzenarien ist ein reservierter Begriff und darf nicht verwendet werden.|
 |DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|kleineSuite|Der Name entspricht nicht dem vorgegebenen Muster|
-|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|Eingrossbuchstabe|Der Name entspricht nicht dem vorgegebenen Muster|
 |DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|EinSonderzeichen&|Der Name entspricht nicht dem vorgegebenen Muster|
 |DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|LoginInvalidTest|Name ist bereits vorhanden!|
 #
