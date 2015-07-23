@@ -5,10 +5,9 @@ Dieser Testfall ruft den Wizard zum Erstellen eines Projektes auf und überprüf
 #
 !!!!!!! Hinweis !!!!!!! - Es wäre sinnvoll diese Tabelle um weitere Kominationen (z.B. auch Port ungültig: abc, 1, ... und Name ungültig: Eingroßbuchstabe, Ein&Sonderzeichen, ...) zu erweitern!
 !include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardProjektFehleingabeSzenario
-!|WizardProjektFehleingabeSzenario|
+!|Wizard Projekt Fehleingabe Szenario|
 |Name|Fehlermeldung|
 |DemoWebTests|Name ist bereits vorhanden!|
-|kleinesProjekt|Der Name entspricht nicht dem vorgegebenen Muster|
 #
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|

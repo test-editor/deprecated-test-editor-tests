@@ -6,7 +6,7 @@ Dieser Testfall ruft den Wizard zum Erstellen einer Szenariosuite auf und überp
 !include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardSzenarioFehleingabeSzenario
 !|Wizard Szenario Fehleingabe Szenario|
 |Pfad|Name|Fehlermeldung|
-|DemoWebTests,TestSzenarien|DOppelteGrossBuchstaben|Der Name entspricht nicht dem vorgegebenen Muster|
+|DemoWebTests,TestSzenarien|NameEnthaeltTest|Der Name entspricht nicht dem vorgegebenen Muster|
 |DemoWebTests,TestSzenarien|MitSonderzeichen&|Der Name entspricht nicht dem vorgegebenen Muster|
 #
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
