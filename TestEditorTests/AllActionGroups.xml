@@ -197,6 +197,9 @@
 				<value>x</value>
 			</argument>
 		</action>
+		<action technicalBindingType="Prüfe_Wert_in_Textblock_vorhanden">
+			<actionName locator="view.text">Testfall</actionName>
+		</action>
 	</ActionGroup>
 
 	<ActionGroup name="View: Testhistorie">

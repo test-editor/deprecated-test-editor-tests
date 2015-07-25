@@ -42,3 +42,4 @@
 !see .TestEditorTests.TeamSvnSuite.RevertChangesTest
 !see .TestEditorTests.ProjektSuite.ReloadLibrary
 !see .TestEditorTests.ExplorerSuite.CloneTestCaseTest
+!see .TestEditorTests.ExplorerSuite.RefreshChangedContentInEditor

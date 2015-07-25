@@ -17,6 +17,9 @@
 -!|script|
 |klicke auf|dialog.common.okButton|
 |klicke auf|dialog.common.okButton|
+# Maske: Allgemein
+-!|script|
+|warte|1|Sekunden|
 # Maske: View: Test-Explorer
 -!|script|
 |navigiere zum Element|DemoWebTests,LocalDemoSuite,LoginSuite,LoginValidTest|
