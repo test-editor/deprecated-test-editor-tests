@@ -1,0 +1,23 @@
+Changing a teststructure in the filesystem should refresh the content of the editor after refresh in the testexplorer. 
+Test the solution of bug: TE-223
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,SucheSignalIdunaTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: Workspace
+-!|script|
+|Speicher|Hello World|unter|DemoWebTests/FitNesseRoot/DemoWebTests/GoogleSucheSuite/SucheSignalIdunaTest/content.txt|
+# Maske: View: Test-Explorer
+-!|script|
+|klicke auf|ID::org.testeditor.ui.testExplorerRefreshHandler|
+# Maske: View: Testfall
+-!|script|
+|prüfe ob im Textblock|view.text|der Text|Hello World|vorhanden ist|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|ApplikationStoppenSzenario|
+#
