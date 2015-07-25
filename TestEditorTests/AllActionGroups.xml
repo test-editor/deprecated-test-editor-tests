@@ -17,6 +17,7 @@
 		<action technicalBindingType="Überprüfe_Text_auf_Seite" />
 		<action technicalBindingType="lese_den_Pfad_Arbeitsbereich" />
 		<action technicalBindingType="pruefe_wert_proprty_datei" />
+		<action technicalBindingType="Starte_Test_Editor_neu" />
 		<action technicalBindingType="erzeuge_testobject_im_filesystem" />
 		<action technicalBindingType="Prüfe_in_Test_Text_in_Zeile_vorhanden" />
 		<action technicalBindingType="Prüfe_in_Test_Text_in_Zeile_nicht_vorhanden" />

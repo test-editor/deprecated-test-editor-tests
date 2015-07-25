@@ -85,8 +85,12 @@
 !|scenario|beende !-Test Editor-!|
 |stopApplication|
 
+'''!-Test Editor-! starten weiderholt''' --------
+!|scenario|starte !-Test Editor-! erneut|
+|startApplicationAgain|
 
-'''!-Test Editor-! beenden''' --------
+
+'''!-Test Editor-! beendet makieren''' --------
 !|scenario|Makiere Test-Editor als beended|
 |markApplicationStopped|
 

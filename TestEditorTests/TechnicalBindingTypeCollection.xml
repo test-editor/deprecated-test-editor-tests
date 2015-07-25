@@ -18,6 +18,10 @@
 		<actionPart position="1" type="TEXT" value="beende Test-Editor" />
 	</TechnicalBindingType>
 
+	<TechnicalBindingType id="Starte_Test_Editor_neu" name="Test-Editor erneut starten">
+		<actionPart position="1" type="TEXT" value="starte Test-Editor erneut" />
+	</TechnicalBindingType>
+
 	<TechnicalBindingType id="lese_den_Pfad_Arbeitsbereich" name="Pfad zum Arbeitsbereich lesen">
 		<actionPart position="1" type="ARGUMENT"/>
 		<actionPart position="2" type="TEXT" value="getWorkspacePath" />

@@ -1,0 +1,31 @@
+This test verifies that the content of editor instances is restored correctly after restarting the Test-Editor. See also bug:  TE-237
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,SucheSignalIdunaTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,SucheAkquinetTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#
+# Maske: Allgemein
+-!|script|
+|starte Test-Editor erneut|
+# Maske: View: Testfall
+-!|script|
+|prüfe ob im Textblock|view.text|der Text|akquinet|vorhanden ist|
+# Maske: Allgemein
+-!|script|
+|schließe den Reiter|SucheAkquinetTest|
+# Maske: View: Testfall
+-!|script|
+|prüfe ob im Textblock|view.text|der Text|Signal Iduna|vorhanden ist|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#
