@@ -1,0 +1,48 @@
+Tests that reverting a fresh created teststruture, meening deleting it, also closes the editor. See bug:  TE-229
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests,GoogleSucheSuite,SucheSignalIdunaTest|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+!include <TestEditorTests.TestSzenarien.TeamScenarien.ImportDemoSharedProjectSzenario
+!|script|
+|Import Demo Shared Project Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|SharedProject|MyTest|
+#
+# Maske: View: Beschreibung
+-!|script|
+|gebe in das Feld|view.description.descriptionText|den Wert|FooBar|ein|
+|klicke auf|view.description.addButton|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.save|aus|
+# Maske: View: Testfall
+-!|script|
+|prüfe ob im Textblock|view.text|der Text|FooBar|vorhanden ist|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|SharedProject|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.revertChanges|aus|
+# Maske: Dialog: Revert
+-!|script|
+|klicke auf|dialog.revert.finishButton|
+# Maske: Dialog: Allgemein
+-!|script|
+|klicke auf|dialog.common.okButton|
+# Maske: Allgemein
+-!|script|
+|warte|3|Sekunden|
+# Maske: View: Testfall
+-!|script|
+|prüfe ob im Textblock|view.text|der Text|FooBar|nicht vorhanden ist|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#
