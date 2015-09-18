@@ -44,3 +44,6 @@
 !see .TestEditorTests.ExplorerSuite.CloneTestCaseTest
 !see .TestEditorTests.ExplorerSuite.RefreshChangedContentInEditor
 !see .TestEditorTests.TeamSvnSuite.RevertNewTestStructureTest
+!see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.TestfallKopierenEinfuegenTest
+!see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.TestfallZeilenLoeschenTest
+!see .TestEditorTests.ProjektSuite.CreateWebProjectAndLaunchTest

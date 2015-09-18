@@ -1,0 +1,38 @@
+This test checks, that we can create a web project and launch a simple test. It is inspired by the bug: https://testeditor.atlassian.net/browse/TE-274
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardProjektSzenario
+!|Wizard Projekt Szenario|
+|Name|
+|MyWebDemo|
+#
+!include <TestEditorTests.TestSzenarien.WizardSzenarien.WizardTestfallSzenario
+!|Wizard Testfall Szenario|
+|Pfad|Name|
+|MyWebDemo|SimpleTest|
+#
+# Maske: View: Testschritt
+-!|script|
+|wähle in Feld|view.teststep.maskChoice|den Wert|Allgemein Browser|aus|
+|wähle in Feld|view.teststep.stepChoice|den Wert|Sekunden warten|aus|
+|gebe in das Feld|view.teststep.urlText|den Wert|1|ein|
+|klicke auf|view.teststep.addButton|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.save|aus|
+# Maske: View: Test-Explorer
+-!|script|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.runTest|aus|
+# Maske: Allgemein
+-!|script|
+|warte|10|Sekunden|
+|überprüfe ob der Text|erfolgreich|vorhanden ist|
+# Maske: Dialog: Allgemein
+-!|script|
+|Button|dialog.common.close|betätigen wenn dieser aktiv ist|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#
