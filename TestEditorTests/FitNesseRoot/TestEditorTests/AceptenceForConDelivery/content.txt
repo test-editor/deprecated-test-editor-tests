@@ -14,6 +14,7 @@
 !see .TestEditorTests.TestfallSuite.TestfallAnlegenUndLoeschenTest
 !see .TestEditorTests.TestfallSuite.TestfallUmbenennenFehleingabeTest
 !see .TestEditorTests.TestfallSuite.TestfallUmbenennenTest
+!see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.TestfallKopierenEinfuegenTest
 !see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.TestfallMitSzenarioTest
 !see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.TestfallMitTestschrittenAnlegenTest
 !see .TestEditorTests.SzenarienSuite.SzenarioAnlegenFehleingabeTest
@@ -43,6 +44,4 @@
 !see .TestEditorTests.ExplorerSuite.CloneTestCaseTest
 !see .TestEditorTests.ExplorerSuite.RefreshChangedContentInEditor
 !see .TestEditorTests.TeamSvnSuite.RevertNewTestStructureTest
-!see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.TestfallKopierenEinfuegenTest
-!see .TestEditorTests.TestfallSuite.TestfallEditierenSuite.TestfallZeilenLoeschenTest
 !see .TestEditorTests.ProjektSuite.CreateWebProjectAndLaunchTest
