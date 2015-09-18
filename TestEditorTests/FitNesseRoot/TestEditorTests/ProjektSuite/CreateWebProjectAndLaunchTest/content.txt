@@ -25,13 +25,12 @@ This test checks, that we can create a web project and launch a simple test. It 
 # Maske: View: Test-Explorer
 -!|script|
 |wähle aus dem Kontextmenü den Eintrag|view.testExplorer.runTest|aus|
-# Maske: Allgemein
--!|script|
-|warte|15|Sekunden|
-|überprüfe ob der Text|erfolgreich|vorhanden ist|
 # Maske: Dialog: Allgemein
 -!|script|
 |Button|dialog.common.close|betätigen wenn dieser aktiv ist|
+# Maske: View: Testhistorie
+-!|script|
+|überprüfe ob in der Tabelle|history.table|die Anzahl der Zeilen|1|ist|
 !include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
 !|script|
 |Applikation Stoppen Szenario|
