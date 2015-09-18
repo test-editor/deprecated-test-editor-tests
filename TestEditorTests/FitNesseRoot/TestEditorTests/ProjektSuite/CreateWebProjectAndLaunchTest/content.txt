@@ -27,7 +27,7 @@ This test checks, that we can create a web project and launch a simple test. It 
 |wähle aus dem Kontextmenü den Eintrag|view.testExplorer.runTest|aus|
 # Maske: Allgemein
 -!|script|
-|warte|10|Sekunden|
+|warte|15|Sekunden|
 |überprüfe ob der Text|erfolgreich|vorhanden ist|
 # Maske: Dialog: Allgemein
 -!|script|
