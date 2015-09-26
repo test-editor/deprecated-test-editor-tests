@@ -26,8 +26,7 @@ testautomat.serverid=fitnesse_based_1.2
 # synchronization (team sharing e.g. via SVN)
 ####################################################################
 
-teamshare_plugin_id=svn-team-share
-teamshare.svn.url=https://github.com/test-editor/test-editor-tests/trunk/
+teamshare_plugin_id=
 
 # Test environment to execute the tests
 ####################################################################
