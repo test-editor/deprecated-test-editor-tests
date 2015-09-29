@@ -2,9 +2,9 @@
 <TechnicalBindingTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="../../org.testeditor.xmllibrary/resources/TechnicalBindingTypeCollection.xsd"
 	schemaVersion="1.1">
-    
+
     <!-- Test-Editors Spezifika -->
-    
+
     <TechnicalBindingType id="Starte_Test_Editor" name="Test-Editor starten">
 		<actionPart position="1" type="TEXT" value="starte Test-Editor" />
 		<actionPart position="2" type="ARGUMENT" />
@@ -13,7 +13,7 @@
 	<TechnicalBindingType id="Test_Editor_beended" name="Test-Editor als beended makieren">
 		<actionPart position="1" type="TEXT" value="Makiere Test-Editor als beended" />
 	</TechnicalBindingType>
-    
+
 	<TechnicalBindingType id="Beende_Test_Editor" name="Test-Editor beenden">
 		<actionPart position="1" type="TEXT" value="beende Test-Editor" />
 	</TechnicalBindingType>
@@ -36,24 +36,24 @@
 		<actionPart position="6" type="ARGUMENT"/>
 	</TechnicalBindingType>
 
-    <TechnicalBindingType id="Prüfe_Test_Server" name="Test-Server prüfen">
+  <TechnicalBindingType id="Prüfe_Test_Server" name="Test-Server prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob der Server auf dem Port" />
 		<actionPart position="2" type="ARGUMENT" />
 		<actionPart position="3" type="TEXT" value="für das Projekt" />
 		<actionPart position="4" type="ARGUMENT" />
 		<actionPart position="5" type="TEXT" value="läuft" />
 	</TechnicalBindingType>
-    
+
     <TechnicalBindingType id="Alle_Projekte_löschen" name="Alle Projekte löschen">
 		<actionPart position="1" type="TEXT" value="alle Projekte löschen" />
 	</TechnicalBindingType>
-    
+
 	<TechnicalBindingType id="Prüfe_Anzahl_der_Projekte" name="Projektanzahl prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob die Anzahl der Projekte" />
 		<actionPart position="2" type="ARGUMENT"/>
 		<actionPart position="3" type="TEXT" value="entspricht" />
 	</TechnicalBindingType>
-    
+
     <TechnicalBindingType id="Tastaturkommando_Senden_an_Beschreibung" name="Tastaturkommando senden an Beschreibung">
 		<actionPart position="1" type="TEXT" value="sende Tastaturkommando" />
 		<actionPart position="2" type="ACTION_NAME" />
@@ -64,7 +64,7 @@
 		<actionPart position="2" type="ACTION_NAME" />
         <actionPart position="3" type="TEXT" value="an die Testfallansicht" />
 	</TechnicalBindingType>
-  
+
   	<TechnicalBindingType id="Kombiniertes_Tastaturkommando_Senden_an_Testfall" name="Tastaturkommandos senden">
 		<actionPart position="1" type="TEXT" value="sende kombiniertes Tastaturkommando" />
 		<actionPart position="2" type="ACTION_NAME" />
@@ -79,11 +79,11 @@
 		<actionPart position="3" type="TEXT" value="und" />
 		<actionPart position="4" type="ARGUMENT" />
     </TechnicalBindingType>
-    
+
     <TechnicalBindingType id="Alle_Widgets_suchen" name="Widgets protokollieren">
         <actionPart position="1" type="TEXT" value="Alle Widgets suchen und protokollieren" />
     </TechnicalBindingType>
-    
+
     <!-- Eingaben -->
 
     <TechnicalBindingType id="Eingabe_Wert" name="Wert eingeben">
@@ -99,7 +99,7 @@
 		<actionPart position="2" type="ACTION_NAME" />
 		<actionPart position="3" type="TEXT" value="den Wert" />
 	    <actionPart position="4" type="ARGUMENT" id="argument1" />
-		<actionPart position="5" type="TEXT" value="aus" />				
+		<actionPart position="5" type="TEXT" value="aus" />
 	</TechnicalBindingType>
 
     <!-- Buttons und Navigation -->
@@ -108,12 +108,12 @@
 		<actionPart position="1" type="TEXT" value="klicke auf" />
 		<actionPart position="2" type="ACTION_NAME" />
 	</TechnicalBindingType>
-	
+
 	<TechnicalBindingType id="Checkbox_Drücken" name="Checkbox klicken">
 		<actionPart position="1" type="TEXT" value="klicke Checkbox" />
 		<actionPart position="2" type="ACTION_NAME" />
 	</TechnicalBindingType>
-	
+
 	<TechnicalBindingType id="Checkbox_Drücken_Label" name="Checkbox anhand Label klicken">
 		<actionPart position="1" type="TEXT" value="klicke Checkbox per Label" />
 		<actionPart position="2" type="ARGUMENT" />
@@ -124,13 +124,13 @@
 		<actionPart position="2" type="ACTION_NAME" id="argument1" />
 		<actionPart position="3" type="TEXT" value="aus" />
 	</TechnicalBindingType>
-	
+
 	<TechnicalBindingType id="Menüeintrag_Auswählen" name="Menü auswählen">
 		<actionPart position="1" type="TEXT" value="wähle den Menüeintrag" />
 		<actionPart position="2" type="ACTION_NAME" id="argument1" />
 		<actionPart position="3" type="TEXT" value="aus" />
 	</TechnicalBindingType>
-    
+
 	<TechnicalBindingType id="Element_Navigieren" name="Element navigieren">
 		<actionPart position="1" type="TEXT" value="navigiere zum Element" />
 		<actionPart position="2" type="ARGUMENT" />
@@ -143,7 +143,7 @@
 		<actionPart position="3" type="TEXT" value="zum Element" />
 		<actionPart position="4" type="ARGUMENT" />
 	</TechnicalBindingType>
-    
+
     <TechnicalBindingType id="Zeile_markieren" name="Zeile markieren">
 		<actionPart position="1" type="TEXT" value="markiere in dem Text" />
 		<actionPart position="2" type="ACTION_NAME" />
@@ -152,12 +152,12 @@
         <actionPart position="5" type="TEXT" value="an Position" />
 		<actionPart position="6" type="ARGUMENT" />
 	</TechnicalBindingType>
-    
+
 	<TechnicalBindingType id="Reiter_Schließen" name="Reiter schließen">
 		<actionPart position="1" type="TEXT" value="schließe den Reiter" />
 		<actionPart position="2" type="ARGUMENT" />
 	</TechnicalBindingType>
-    
+
     <!-- TODO Review -->
 	<TechnicalBindingType id="Index_Selektieren" name="Index selektieren">
 		<actionPart position="1" type="TEXT" value="selektiere Index" />
@@ -165,28 +165,28 @@
 	</TechnicalBindingType>
 
     <!-- Warten -->
- 
+
 	<TechnicalBindingType id="Warte_Sekunden" name="Sekunden warten">
 		<actionPart position="1" type="TEXT" value="warte" />
 		<actionPart position="2" type="ARGUMENT" />
 		<actionPart position="3" type="TEXT" value="Sekunden" />
 	</TechnicalBindingType>
-    
+
 	<TechnicalBindingType id="Button_betaetigen_wenn_aktivitiert" name="Button betätigen wenn aktivitiert">
 		<actionPart position="1" type="TEXT" value="Button" />
 		<actionPart position="2" type="ACTION_NAME" />
 		<actionPart position="3" type="TEXT" value="betätigen wenn dieser aktiv ist" />
 	</TechnicalBindingType>
     <!-- Prüfung -->
-    
+
     <TechnicalBindingType id="Prüfe_Anzahl_Zeilen_In_Tabelle" name="Prüfe Anzahl Zeilen in Tabelle">
        <actionPart position="1" type="TEXT" value="überprüfe ob in der Tabelle" />
        <actionPart position="2" type="ACTION_NAME" />
        <actionPart position="3" type="TEXT" value="die Anzahl der Zeilen" />
        <actionPart position="4" type="ARGUMENT" />
        <actionPart position="5" type="TEXT" value="ist" />
-    </TechnicalBindingType>    
-    
+    </TechnicalBindingType>
+
     <TechnicalBindingType id="Prüfe_Wert_in_Feld_vorhanden" name="Text im Feld prüfen">
        <actionPart position="1" type="TEXT" value="überprüfe ob im Feld" />
        <actionPart position="2" type="ACTION_NAME" />
@@ -194,7 +194,7 @@
        <actionPart position="4" type="ARGUMENT" />
        <actionPart position="5" type="TEXT" value="vorhanden ist" />
     </TechnicalBindingType>
-  
+
     <TechnicalBindingType id="Prüfe_Wert_in_Feld_nicht_vorhanden" name="Text im Feld ungültig prüfen">
         <actionPart position="1" type="TEXT" value="überprüfe ob im Feld" />
         <actionPart position="2" type="ACTION_NAME" />
@@ -202,7 +202,7 @@
         <actionPart position="4" type="ARGUMENT" />
         <actionPart position="5" type="TEXT" value="nicht vorhanden ist" />
     </TechnicalBindingType>
-  
+
     <TechnicalBindingType id="Prüfe_Wert_in_Beschriftung" name="Beschriftung prüfen">
        <actionPart position="1" type="TEXT" value="überprüfe ob die Beschriftung" />
        <actionPart position="2" type="ACTION_NAME" />
@@ -216,7 +216,7 @@
 		<actionPart position="2" type="ARGUMENT" />
 		<actionPart position="3" type="TEXT" value="vorhanden ist" />
 	</TechnicalBindingType>
-   
+
     <TechnicalBindingType id="Prüfe_Wert_in_Textblock_vorhanden" name="Textblock prüfen">
         <actionPart position="1" type="TEXT" value="prüfe ob im Textblock" />
         <actionPart position="2" type="ACTION_NAME" />
@@ -224,7 +224,7 @@
         <actionPart position="4" type="ARGUMENT" />
         <actionPart position="5" type="TEXT" value="vorhanden ist" />
     </TechnicalBindingType>
-   
+
     <TechnicalBindingType id="Prüfe_Wert_in_Textblock_nicht_vorhanden" name="Textblock ungültig prüfen">
        <actionPart position="1" type="TEXT" value="prüfe ob im Textblock" />
        <actionPart position="2" type="ACTION_NAME" />
@@ -232,7 +232,7 @@
        <actionPart position="4" type="ARGUMENT" />
        <actionPart position="5" type="TEXT" value="nicht vorhanden ist" />
     </TechnicalBindingType>
-	
+
 	<TechnicalBindingType id="Prüfe_in_Test_Text_in_Zeile_vorhanden" name="Text prüfen in Zeile">
         <actionPart position="1" type="TEXT" value="prüfe ob in Test" />
         <actionPart position="2" type="ARGUMENT" />
@@ -242,7 +242,7 @@
 		<actionPart position="6" type="ARGUMENT" />
         <actionPart position="7" type="TEXT" value="vorhanden ist" />
     </TechnicalBindingType>
-	
+
 	<TechnicalBindingType id="Prüfe_in_Test_Text_in_Zeile_nicht_vorhanden" name="Text prüfen in Zeile nicht vorhanden">
         <actionPart position="1" type="TEXT" value="prüfe ob in Test" />
         <actionPart position="2" type="ARGUMENT" />
@@ -258,19 +258,19 @@
 		<actionPart position="2" type="ACTION_NAME" />
 		<actionPart position="3" type="TEXT" value="deaktiviert ist" />
 	</TechnicalBindingType>
-    
+
 	<TechnicalBindingType id="Prüfe_Button_aktiviert" name="Button aktiviert prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob der Button" />
 		<actionPart position="2" type="ACTION_NAME" />
 		<actionPart position="3" type="TEXT" value="aktiviert ist" />
 	</TechnicalBindingType>
-	
+
 	<TechnicalBindingType id="Prüfe_Checkbox_deaktiviert" name="Checkbox deaktiviert prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob die Checkbox" />
 		<actionPart position="2" type="ACTION_NAME" />
 		<actionPart position="3" type="TEXT" value="deaktiviert ist" />
 	</TechnicalBindingType>
-    
+
 	<TechnicalBindingType id="Prüfe_Checkbox_aktiviert" name="Checkbox aktiviert prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob die Checkbox" />
 		<actionPart position="2" type="ACTION_NAME" />
@@ -282,13 +282,13 @@
 		<actionPart position="2" type="ACTION_NAME" />
 		<actionPart position="3" type="TEXT" value="deselektiert ist" />
 	</TechnicalBindingType>
-    
+
 	<TechnicalBindingType id="Prüfe_Checkbox_selektiert" name="Checkbox selektiert prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob die Checkbox" />
 		<actionPart position="2" type="ACTION_NAME" />
 		<actionPart position="3" type="TEXT" value="selektiert ist" />
-	</TechnicalBindingType>	
-    
+	</TechnicalBindingType>
+
 	<TechnicalBindingType id="Prüfe_Anzahl_Kindelemente" name="Kindelementeanzahl prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob das Element" />
 		<actionPart position="2" type="ARGUMENT"/>
@@ -311,7 +311,7 @@
 		<actionPart position="6" type="ARGUMENT"/>
 		<actionPart position="7" type="TEXT" value="Kinder hat"/>
 	</TechnicalBindingType>
-	
+
 	<TechnicalBindingType id="Prüfe_Anzahl_Elemente_In_Liste" name="Anzahle Elemente in Liste prüfen">
 		<actionPart position="1" type="TEXT" value="prüfe ob in der Liste" />
 		<actionPart position="2" type="ACTION_NAME" id="argument1" />
@@ -324,7 +324,7 @@
 		<actionPart position="1" type="TEXT" value="Erzeuge neues testobjekt unbemerkt von der anwendung mit dem vollen Namen:" />
 		<actionPart position="2" type="ARGUMENT" />
 	</TechnicalBindingType>
-	
+
 	<TechnicalBindingType id="Prüfe_Wert_In_DropDownBox" name="Prüfen auf Wert in DropDownBox">
 		<actionPart position="1" type="TEXT" value="prüfe ob die DropDownBox" />
 		<actionPart position="2" type="ACTION_NAME"/>

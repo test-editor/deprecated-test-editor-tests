@@ -45,3 +45,4 @@
 !see .TestEditorTests.ExplorerSuite.RefreshChangedContentInEditor
 !see .TestEditorTests.TeamSvnSuite.RevertNewTestStructureTest
 !see .TestEditorTests.ProjektSuite.CreateWebProjectAndLaunchTest
+!see .TestEditorTests.ProjektSuite.ChangeTestEnvInProjectEditor

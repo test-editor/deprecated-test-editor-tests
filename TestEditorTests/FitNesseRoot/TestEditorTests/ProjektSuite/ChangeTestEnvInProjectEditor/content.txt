@@ -1,0 +1,26 @@
+This test changes the test environment in a project.
+!include <TestEditorTests.TestSzenarien.ApplikationStartenSzenario
+!|script|
+|Applikation Starten Szenario|
+#
+# Maske: Workspace
+-!|script|
+|Speicher|content|unter|DemoWebTests/vagrant/linux/VagrantFile|
+# Maske: View: Test-Explorer
+-!|script|
+|navigiere zum Element|DemoWebTests|
+|wähle aus dem Kontextmenü den Eintrag|view.testExplorer.open|aus|
+# Maske: View: Projekt
+-!|script|
+|wähle in Feld|view.project.testexecenv|den Wert|linux|aus|
+# Maske: Allgemein: Menü
+-!|script|
+|wähle den Menüeintrag|common.menu.save|aus|
+# Maske: Allgemein
+-!|script|
+|$wsPath=|getWorkspacePath|
+|ist der Wert|vagrant/linux|am Schlüssel|test.execution.environment.config|hinterlegt in der datei|$wsPath/DemoWebTests/config.tpr|
+!include <TestEditorTests.TestSzenarien.ApplikationStoppenSzenario
+!|script|
+|Applikation Stoppen Szenario|
+#

@@ -101,7 +101,7 @@
 		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
 			<actionName locator="Testhistorie löschen">Testhistorie löschen</actionName>
-		</action>       
+		</action>
 		<action technicalBindingType="Kontextmenüeintrag_Auswählen">
 			<actionName locator="view.testExplorer.shareProject">Projekt teilen</actionName>
 		</action>
@@ -149,6 +149,13 @@
 		</action>
 		<action technicalBindingType="Prüfe_Wert_in_Feld_vorhanden">
 			<actionName locator="view.editProject.browser">Browser</actionName>
+		</action>
+		<action technicalBindingType="Auswahl_Wert">
+			<actionName locator="view.project.testexecenv">Test ablauf Umgebung</actionName>
+			<argument id="argument1">
+				<value>localhost</value>
+				<value>linux</value>
+			</argument>
 		</action>
 		<action technicalBindingType="Button_Drücken">
 			<actionName locator="view.editProject.reloadLibraryButtonID">Bibliothek neu laden</actionName>
@@ -215,7 +222,7 @@
 		</action>
 		<action technicalBindingType="Prüfe_Anzahl_Zeilen_In_Tabelle">
 			<actionName locator="history.table">Testhistorie</actionName>
-		</action>    
+		</action>
 	</ActionGroup>
 
 	<ActionGroup name="View: Testlog">
@@ -475,7 +482,7 @@
 		<action technicalBindingType="Prüfe_Button_aktiviert">
 			<actionName locator="wizard.rename.cancelButton">Abbrechen</actionName>
 		</action>
-		<!-- <action technicalBindingType="Prüfe_Wert_in_Beschriftung"> <actionName 
+		<!-- <action technicalBindingType="Prüfe_Wert_in_Beschriftung"> <actionName
 			locator="wizard.rename.errorMessage">Fehlermeldung</actionName> </action> -->
 	</ActionGroup>
 
