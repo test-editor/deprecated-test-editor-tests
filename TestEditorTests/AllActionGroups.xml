@@ -661,6 +661,14 @@
 			<actionName locator="dialog.search.teststructure.resulttable">Testfallname</actionName>
 		</action>
 		<action technicalBindingType="Index_Selektieren" />
+		<action technicalBindingType="Prüfe_Tabellenspalte_Nach_Suchstring">
+			<actionName locator="dialog.search.teststructure.resulttable">Suchergebnis</actionName>
+		</action>
+		
+		<action technicalBindingType="Prüfe_Tabellenspalte_Zeile_Nach_Suchstring ">
+			<actionName locator="dialog.search.teststructure.resulttable">Suchergebnis</actionName>
+		</action>
+
 	</ActionGroup>
 
   <ActionGroup name="Workspace">

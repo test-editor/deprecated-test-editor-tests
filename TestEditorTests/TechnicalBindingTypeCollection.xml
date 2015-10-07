@@ -351,5 +351,27 @@
 		<actionPart position="3" type="TEXT" value="unter" />
 		<actionPart position="4" type="ARGUMENT" />
 	</TechnicalBindingType>
-
+	
+	<TechnicalBindingType id="Prüfe_Tabellenspalte_Nach_Suchstring" name="Tabellenspalte nach Suchstring prüfen">
+		<actionPart position="1" type="TEXT" value="prüfe Tabelle" />
+		<actionPart position="2" type="ACTION_NAME"/>
+		<actionPart position="3" type="TEXT" value="ob in Spalte" />
+		<actionPart position="4" type="ARGUMENT" />
+		<actionPart position="5" type="TEXT" value="der Wert" />
+		<actionPart position="6" type="ARGUMENT" />
+		<actionPart position="7" type="TEXT" value="in allen Zeilen vorhanden ist" />
+	</TechnicalBindingType>
+	
+	<TechnicalBindingType id="Prüfe_Tabellenspalte_Zeile_Nach_Suchstring" name="Tabellenspalte und Zeile nach Suchstring prüfen">
+		<actionPart position="1" type="TEXT" value="prüfe Tabelle" />
+		<actionPart position="2" type="ACTION_NAME"/>
+		<actionPart position="3" type="TEXT" value="ob in Spalte" />
+		<actionPart position="4" type="ARGUMENT" />
+		<actionPart position="5" type="TEXT" value="und in Zeile" />
+		<actionPart position="6" type="ARGUMENT" />
+		<actionPart position="7" type="TEXT" value="der Wert" />
+		<actionPart position="8" type="ARGUMENT" />
+		<actionPart position="9" type="TEXT" value="vorhanden ist" />
+	</TechnicalBindingType>
+	
 </TechnicalBindingTypes>
